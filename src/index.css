@@ -114,7 +114,7 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter Variable', sans-serif;
+  --font-sans: var(--font-kapwa-sans);
   --font-mono: var(--font-kapwa-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
