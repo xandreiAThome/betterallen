@@ -47,7 +47,7 @@ const Services: React.FC = () => {
       <>
         <SEO
           title="Services"
-          description={`All services provided by the LGU of${import.meta.env.VITE_GOVERNMENT_NAME}. Find what you need for citizenship, business, education, and more.`}
+          description={`All services provided by the LGU of ${import.meta.env.VITE_GOVERNMENT_NAME}. Find what you need for citizenship, business, education, and more.`}
           keywords="government services, public services, local government, civic services"
         />
         <ServicesSection

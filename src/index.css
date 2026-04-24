@@ -4,7 +4,6 @@
 
 @source '../node_modules/@bettergov/kapwa/dist';
 @import '@bettergov/kapwa/styles';
-@import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 @import '@fontsource-variable/inter';
 

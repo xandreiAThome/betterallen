@@ -288,7 +288,7 @@ const Navbar: React.FC = () => {
                     type="button"
                     key={`${hotline.slug}-${idx}`}
                     onClick={() => copyHotlineNumber(hotline.number)}
-                    className="shrink-0 flex text-nowrap text-white text-sm hover:bg-slate-200/50 trans hover:-translate-y-0.5 transition-all bg-slate-200/20 px-2 py-1 rounded-md items-center gap-1"
+                    className="shrink-0 flex text-nowrap text-white text-sm hover:bg-slate-200/50 hover:-translate-y-0.5 transition-all bg-slate-200/20 px-2 py-1 rounded-md items-center gap-1"
                   >
                     <Icon className="h-4 w-4" />
                     <span>{hotline.name}: </span>
