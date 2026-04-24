@@ -267,3 +267,46 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .slideshow {
+    @apply relative overflow-hidden flex items-center;
+    white-space: nowrap;
+  }
+
+  .slideshow-measure {
+    @apply inline-flex items-center gap-4;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .slideshow-track {
+    @apply inline-flex items-center justify-center gap-4;
+  }
+
+  .slideshow-track.is-static {
+    margin: 0 auto;
+    width: max-content;
+    justify-content: center;
+  }
+
+  .slideshow-track.is-animated {
+    width: max-content;
+    animation: slideshow 18s linear infinite;
+  }
+
+  .slideshow:hover .slideshow-track.is-animated {
+    animation-play-state: paused;
+  }
+
+  @keyframes slideshow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}

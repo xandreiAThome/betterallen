@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   Menu,
@@ -65,16 +65,56 @@ const Navbar: React.FC = () => {
     }
   });
   const [currentCurrencyIndex, setCurrentCurrencyIndex] = useState(0);
+  const [shouldScrollHotlines, setShouldScrollHotlines] = useState(false);
+  const hotlineViewportRef = useRef<HTMLDivElement | null>(null);
+  const hotlineMeasureRef = useRef<HTMLDivElement | null>(null);
   const { t } = useTranslation();
   const location = useLocation();
 
+  const fallbackCopyText = (text: string): boolean => {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.setAttribute('readonly', '');
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-9999px';
+    textArea.style.top = '0';
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    let copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch {
+      copied = false;
+    }
+
+    document.body.removeChild(textArea);
+    return copied;
+  };
+
   const copyHotlineNumber = async (number: string) => {
     try {
-      await navigator.clipboard.writeText(number);
-      toast.success('Hotline number copied');
-    } catch (error) {
-      console.error('Failed to copy hotline number:', error);
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(number);
+        toast.success('Hotline number copied');
+        return;
+      }
+
+      if (fallbackCopyText(number)) {
+        toast.success('Hotline number copied');
+        return;
+      }
+
       toast.error('Could not copy hotline number');
+    } catch (error) {
+      if (fallbackCopyText(number)) {
+        toast.success('Hotline number copied');
+      } else {
+        console.error('Failed to copy hotline number:', error);
+        toast.error('Could not copy hotline number');
+      }
     }
   };
 
@@ -163,6 +203,27 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Check if hotline items overflow the container to decide whether to animate
+  useEffect(() => {
+    const viewport = hotlineViewportRef.current;
+    const measure = hotlineMeasureRef.current;
+    if (!viewport || !measure) return;
+
+    const checkOverflow = () => {
+      setShouldScrollHotlines(measure.scrollWidth > viewport.clientWidth);
+    };
+
+    checkOverflow();
+
+    const rafId = window.requestAnimationFrame(checkOverflow);
+    window.addEventListener('resize', checkOverflow);
+
+    return () => {
+      window.cancelAnimationFrame(rafId);
+      window.removeEventListener('resize', checkOverflow);
+    };
+  }, []);
+
   const isActivePage = (href: string): boolean => {
     return (
       location.pathname === href || location.pathname.startsWith(href + '/')
@@ -193,23 +254,49 @@ const Navbar: React.FC = () => {
           isScrolled ? 'max-h-0' : 'max-h-10'
         }`}
       >
-        <div className="container mx-auto px-4 flex justify-end items-center h-10">
-          <div className="flex items-center space-x-4">
-            {hotlinesData.hotlines.map(hotline => {
-              const Icon = resolveLucideIcon(hotline.icon);
-              return (
-                <button
-                  type="button"
-                  key={hotline.slug}
-                  onClick={() => copyHotlineNumber(hotline.number)}
-                  className="flex text-white text-sm hover:text-gray-300 transition-colors bg-slate-200/20 px-2 py-1 rounded-md items-center gap-1"
-                >
-                  <Icon className="h-4 w-4" />
-                  <span>{hotline.name}</span>
-                  <span className="font-mono">{hotline.number}</span>
-                </button>
-              );
-            })}
+        <div className="mx-auto flex justify-end items-center h-10">
+          <div className="slideshow w-full" ref={hotlineViewportRef}>
+            {/* Measure the width of hotline items for scrolling effect */}
+            <div className="slideshow-measure" ref={hotlineMeasureRef}>
+              {hotlinesData.hotlines.map(hotline => {
+                const Icon = resolveLucideIcon(hotline.icon);
+                return (
+                  <button
+                    type="button"
+                    key={`measure-${hotline.slug}`}
+                    className="shrink-0 flex text-nowrap text-white text-sm bg-slate-200/20 px-2 py-1 rounded-md items-center gap-1"
+                  >
+                    <Icon className="h-4 w-4" />
+                    <span>{hotline.name}: </span>
+                    <span className="font-mono">{hotline.number}</span>
+                  </button>
+                );
+              })}
+            </div>
+            <div
+              className={`slideshow-track ${
+                shouldScrollHotlines ? 'is-animated' : 'is-static'
+              }`}
+            >
+              {(shouldScrollHotlines
+                ? [...hotlinesData.hotlines, ...hotlinesData.hotlines]
+                : hotlinesData.hotlines
+              ).map((hotline, idx) => {
+                const Icon = resolveLucideIcon(hotline.icon);
+                return (
+                  <button
+                    type="button"
+                    key={`${hotline.slug}-${idx}`}
+                    onClick={() => copyHotlineNumber(hotline.number)}
+                    className="shrink-0 flex text-nowrap text-white text-sm hover:bg-slate-200/50 trans hover:-translate-y-0.5 transition-all bg-slate-200/20 px-2 py-1 rounded-md items-center gap-1"
+                  >
+                    <Icon className="h-4 w-4" />
+                    <span>{hotline.name}: </span>
+                    <span className="font-mono">{hotline.number}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
