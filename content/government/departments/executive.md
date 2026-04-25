@@ -20,6 +20,8 @@ The **current Mayor is {MAYOR}.**
 
 ## Mayor of {GOVERNMENT_NAME}
 
+![Pikachu](/images/Pokémon_Pikachu_art.png)
+
 **Image Caption**
 
 Mayor of **{GOVERNMENT_NAME}**, **{MAYOR}**

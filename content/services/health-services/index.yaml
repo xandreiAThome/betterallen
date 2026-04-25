@@ -2,18 +2,54 @@
 # This file contains all the pages/services available under the Health Services category
 
 pages:
-  - name: 'Get free check-ups, basic medicines, and vaccines'
-    slug: 'get-free-check-ups-basic-medicines-and-vaccines'
-    description: 'Access free medical check-ups, basic medicines, and vaccination services provided by your local government.'
-    
-  - name: 'Access maternal care and child immunization'
-    slug: 'access-maternal-care-and-child-immunization'
-    description: 'Information about maternal health services and child immunization programs available in your area.'
-    
-  - name: 'Go to the local hospital for treatment or confinement'
-    slug: 'go-to-the-local-hospital-for-treatment-or-confinement'
-    description: 'Details about local hospital services, treatment options, and confinement procedures.'
-    
-  - name: 'Join health programs (nutrition, dengue control, TB treatment)'
-    slug: 'join-health-programs-nutrition-dengue-control-tb-treatment'
-    description: 'Participate in various health programs including nutrition support, dengue control, and TB treatment initiatives.'
+  - name: 'Get general medical consultation and basic emergency care'
+    slug: 'get-general-medical-consultation-and-basic-emergency-care'
+    description: 'Access outpatient consultation, minor emergency care, and medicine guidance from the Allen RHU.'
+
+  - name: 'Get dental checkups, extractions, and fillings'
+    slug: 'get-dental-checkups-extractions-and-fillings'
+    description: 'Avail dental assessment, extraction, filling, and gum care services at the RHU dental clinic.'
+
+  - name: 'Request a medical certificate for work, school, or benefits'
+    slug: 'request-a-medical-certificate-for-work-school-or-benefits'
+    description: 'Apply for RHU-issued medical certificates for fit-to-work, school activities, and official requirements.'
+
+  - name: 'Secure a sanitary permit and health card'
+    slug: 'secure-a-sanitary-permit-and-health-card'
+    description: 'Complete sanitation inspections and requirements for business permits, health cards, and related certificates.'
+
+  - name: 'Get free TB screening and treatment (TB-DOTS)'
+    slug: 'get-free-tb-screening-and-treatment-dots'
+    description: 'Receive TB screening, treatment enrollment, and follow-up monitoring under RHU TB-DOTS services.'
+
+  - name: 'Report notifiable or vector-borne diseases'
+    slug: 'report-notifiable-or-vector-borne-diseases'
+    description: 'Report infectious or vector-borne disease cases and coordinate with RHU for case management and response.'
+
+  - name: 'Access family planning and reproductive health services'
+    slug: 'access-family-planning-and-reproductive-health-services'
+    description: 'Get counseling and family planning method support for couples and individuals of reproductive age.'
+
+  - name: 'Access prenatal and child health services'
+    slug: 'access-prenatal-and-child-health-services'
+    description: 'Use RHU and barangay health station services for prenatal monitoring and child health support.'
+
+  - name: 'Join nutrition counseling and child immunization services'
+    slug: 'join-nutrition-counseling-and-child-immunization-services'
+    description: 'Avail nutrition counseling, malnutrition intervention support, and routine child immunization services.'
+
+  - name: 'Request an emergency ambulance transfer'
+    slug: 'request-an-emergency-ambulance-transfer'
+    description: 'Coordinate emergency ambulance transfers for eligible referrals and urgent health cases.'
+
+  - name: 'Enroll in PhilHealth YAKAP outpatient services'
+    slug: 'enroll-in-philhealth-yakap-outpatient-services'
+    description: 'Get assisted enrollment and outpatient consultation support under the PhilHealth YAKAP program.'
+
+  - name: 'Get schistosomiasis treatment and follow-up care'
+    slug: 'get-schistosomiasis-treatment-and-follow-up-care'
+    description: 'Receive schistosomiasis consultation, medicine access, counseling, and follow-up services.'
+
+  - name: 'Get leprosy treatment and follow-up care'
+    slug: 'get-leprosy-treatment-and-follow-up-care'
+    description: 'Access RHU leprosy treatment, counseling, and scheduled monitoring for recovery and continuity of care.'

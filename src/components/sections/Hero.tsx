@@ -63,7 +63,7 @@ export default function Hero() {
             slug: category.slug,
             categorySlug: category.slug,
             description: category.description,
-            type: category.type || 'service',
+            type: category.type,
             icon: category.icon,
           });
         }
@@ -81,7 +81,7 @@ export default function Hero() {
                 slug: page.slug,
                 categorySlug: category.slug,
                 description: page.description,
-                type: category.type || 'service',
+                type: category.type,
               });
             }
           }
@@ -154,7 +154,10 @@ export default function Hero() {
 
                 {/* Search results hover card */}
                 {isInputFocused && debouncedSearchQuery.trim() && (
-                  <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-10 max-h-96 overflow-y-auto">
+                  <div
+                    className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-10 max-h-96 overflow-y-auto"
+                    onMouseDown={e => e.preventDefault()}
+                  >
                     {searchResults.length > 0 ? (
                       searchResults.map((result, idx) =>
                         result.icon ? (
