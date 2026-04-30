@@ -1,0 +1,23 @@
+places:
+  - name: 'Allen Beach Resort'
+    slug: 'allen-beach-resort'
+    description: 'A beautiful beachfront resort offering cottage rentals, swimming areas, and sunset views.'
+    barangay: 'Balay'
+    image: '/images/tourism/allen-beach-resort.jpg'
+    mapsUrl: 'https://maps.google.com'
+    contact: '+63 123 456 7890'
+    featured: true
+
+  - name: 'Sandy Shores Beach'
+    slug: 'sandy-shores-beach'
+    description: 'A public beach with white sand and clear waters, perfect for swimming and picnics.'
+    barangay: 'Cabadian'
+    image: '/images/tourism/sandy-shores-beach.jpg'
+    mapsUrl: 'https://maps.google.com'
+
+  - name: 'Sunset Cove'
+    slug: 'sunset-cove'
+    description: 'A secluded cove known for its stunning sunset views and peaceful atmosphere.'
+    barangay: 'Kinabjangan'
+    mapsUrl: 'https://maps.google.com'
+    featured: true

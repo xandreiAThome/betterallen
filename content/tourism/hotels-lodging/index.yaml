@@ -1,0 +1,23 @@
+places:
+  - name: 'Allen Grand Hotel'
+    slug: 'allen-grand-hotel'
+    description: 'A premier hotel in the heart of Allen offering comfortable rooms and excellent service.'
+    barangay: 'Poblacion'
+    image: '/images/tourism/allen-grand-hotel.jpg'
+    mapsUrl: 'https://maps.google.com'
+    contact: '+63 555 123 4567'
+    socialUrl: 'https://facebook.com/allengrandhotel'
+    featured: true
+
+  - name: 'Seaside Inn'
+    slug: 'seaside-inn'
+    description: 'Budget-friendly inn near the beach with basic amenities.'
+    barangay: 'Balay'
+    contact: '+63 555 987 6543'
+
+  - name: 'Mountain View Lodge'
+    slug: 'mountain-view-lodge'
+    description: 'A peaceful lodge with scenic mountain views and fresh air.'
+    barangay: 'Kinabjangan'
+    image: '/images/tourism/mountain-view-lodge.jpg'
+    mapsUrl: 'https://maps.google.com'

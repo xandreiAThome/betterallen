@@ -1,0 +1,20 @@
+places:
+  - name: 'Mount Allen Peak'
+    slug: 'mount-allen-peak'
+    description: 'A hiking destination offering panoramic views of the town and surrounding areas.'
+    barangay: 'Cabadian'
+    mapsUrl: 'https://maps.google.com'
+    featured: true
+
+  - name: 'Allen River Park'
+    slug: 'allen-river-park'
+    description: 'A riverside park with walking trails and picnic areas.'
+    barangay: 'Poblacion'
+    image: '/images/tourism/allen-river-park.jpg'
+    contact: '+63 555 111 2222'
+
+  - name: 'Mangrove Conservation Area'
+    slug: 'mangrove-conservation-area'
+    description: 'A protected mangrove forest with boardwalks for nature walks and bird watching.'
+    barangay: 'Balay'
+    mapsUrl: 'https://maps.google.com'

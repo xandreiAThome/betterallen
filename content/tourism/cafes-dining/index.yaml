@@ -1,0 +1,23 @@
+places:
+  - name: 'Kape at Kain'
+    slug: 'kape-at-kain'
+    description: 'A cozy local cafe serving Filipino coffee and homemade pastries.'
+    barangay: 'Poblacion'
+    image: '/images/tourism/kape-at-kain.jpg'
+    contact: '+63 987 654 3210'
+    socialUrl: 'https://facebook.com/kapeatkain'
+    featured: true
+
+  - name: 'Seaside Cafe'
+    slug: 'seaside-cafe'
+    description: 'Beachfront dining with fresh seafood and local dishes.'
+    barangay: 'Balay'
+    mapsUrl: 'https://maps.google.com'
+    contact: '+63 123 987 6543'
+
+  - name: 'Allen Town Bistro'
+    slug: 'allen-town-bistro'
+    description: 'A modern bistro offering international cuisine and specialty coffee.'
+    barangay: 'Poblacion'
+    image: '/images/tourism/allen-town-bistro.jpg'
+    socialUrl: 'https://facebook.com/allentownbistro'
