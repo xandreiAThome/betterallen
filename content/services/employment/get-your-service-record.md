@@ -49,7 +49,8 @@ The Human Resource Management Office (HRMO) issues printed copies of Service Rec
 ## Contact Information
 
 - **Office**: Human Resource Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0935-635-6229
 - **Hours**: Monday to Friday, office hours
 
 > Processing time may extend to 1 day if employee records need to be retrieved from storage. Coordinate with the HRMO on your expected release date.

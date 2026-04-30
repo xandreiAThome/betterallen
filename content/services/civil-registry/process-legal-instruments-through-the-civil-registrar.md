@@ -56,7 +56,8 @@ Visit the Civil Registry Office and present your documents — staff will advise
 ## Contact Information
 
 - **Office**: Municipal Civil Registry Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0995-074-0903
 - **Hours**: Monday to Friday, office hours
 
 > File your legal instrument within the prescribed period to avoid complications in civil registry records.

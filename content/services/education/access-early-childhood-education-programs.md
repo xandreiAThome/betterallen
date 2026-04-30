@@ -59,7 +59,8 @@ The MSWDO, through its Child Development Workers (CDWs), implements Early Childh
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar; or your **Barangay Day Care Center**
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > For enrollment, contact your barangay Child Development Worker (CDW) directly.

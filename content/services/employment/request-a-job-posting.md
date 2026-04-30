@@ -44,7 +44,7 @@ The Public Employment Service Office (PESO) posts job vacancies from accredited 
 ## Contact Information
 
 - **Office**: Public Employment Service Office (PESO), Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
-- **Email**: lguallenpeso@gmail.com
-- **Facebook**: PESO Allen Official Page
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0929-435-9454
+- **Email**: [lguallenpeso@gmail.com](mailto:lguallenpeso@gmail.com)
 - **Hours**: Monday to Friday, office hours

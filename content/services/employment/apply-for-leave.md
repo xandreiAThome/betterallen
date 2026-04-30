@@ -56,7 +56,8 @@ The Human Resource Management Office (HRMO) processes leave applications for inc
 ## Contact Information
 
 - **Office**: Human Resource Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0935-635-6229
 - **Hours**: Monday to Friday, office hours
 
 > Leave applications must be submitted to the HRMO before the intended leave date. Late submissions may cause delays in leave approval and credit processing.

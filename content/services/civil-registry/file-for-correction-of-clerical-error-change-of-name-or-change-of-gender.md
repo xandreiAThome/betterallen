@@ -74,7 +74,8 @@ Under Republic Act No. 9048, the Municipal Civil Registrar has the authority to 
 ## Contact Information
 
 - **Office**: Municipal Civil Registry Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0995-074-0903
 - **Hours**: Monday to Friday, office hours
 
 > Personal filing and appearance is required for petitions involving Change of Sex/Gender. All petitions are subject to a mandatory posting or publication period before a decision is made.

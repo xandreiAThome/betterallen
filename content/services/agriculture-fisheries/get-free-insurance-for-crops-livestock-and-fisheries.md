@@ -45,7 +45,8 @@ The Municipal Agriculture Office (MAO) facilitates free government insurance cov
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours
 
 > Insurance availability and coverage scope may depend on current program allocation from the PCIC and DA. Visit the MAO to confirm current program coverage before applying.

@@ -48,5 +48,6 @@ The Municipal Assessor's Office issues certified true copies and photocopies of 
 ## Contact Information
 
 - **Office**: Municipal Assessor's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0977-660-7974
 - **Hours**: Monday to Friday, office hours

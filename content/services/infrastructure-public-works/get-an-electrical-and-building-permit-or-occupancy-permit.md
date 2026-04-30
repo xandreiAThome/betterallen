@@ -84,7 +84,8 @@ The Municipal Engineering Office issues Building Permits and Occupancy Permits f
 ## Contact Information
 
 - **Office**: Municipal Engineering Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0945-4503-4847
 - **Hours**: Monday to Friday, office hours
 
 > Secure your Building Permit before starting any construction. Operating without a permit may result in penalties under the National Building Code.

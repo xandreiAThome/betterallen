@@ -50,7 +50,8 @@ No specific checklist is required upfront — MAO staff will advise you on what 
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours
 
 > Being registered in the RSBSA is a prerequisite for accessing many agricultural assistance programs, including crop insurance and seed distribution.

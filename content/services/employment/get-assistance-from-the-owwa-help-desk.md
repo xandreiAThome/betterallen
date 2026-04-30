@@ -57,8 +57,9 @@ The PESO Office hosts an Overseas Workers Welfare Administration (OWWA) Help Des
 ## Contact Information
 
 - **Office**: Public Employment Service Office (PESO), Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
-- **Email**: lguallenpeso@gmail.com
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0929-435-9454
+- **Email**: [lguallenpeso@gmail.com](mailto:lguallenpeso@gmail.com)
 - **Hours**: Monday to Friday, office hours
 
 > Only active OWWA members can access OWWA services through this help desk. If you are not yet a member, inquire about OWWA membership through the OWWA Regional Welfare Office.

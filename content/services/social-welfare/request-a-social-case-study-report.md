@@ -54,7 +54,8 @@ The MSWDO prepares Social Case Study Reports for residents who need documentatio
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > The Social Case Study Report is typically required by hospitals, DSWD, and other agencies when processing assistance requests on behalf of indigent clients.

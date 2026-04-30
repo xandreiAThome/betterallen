@@ -58,7 +58,8 @@ No standard checklist is pre-specified — bring your court-authenticated copy o
 ## Contact Information
 
 - **Office**: Municipal Civil Registry Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0995-074-0903
 - **Hours**: Monday to Friday, office hours
 
 > The Civil Registry will verify the authenticity of the court decision if the filing party is not the Clerk of Court. Bring an authenticated copy of the court order or decision.

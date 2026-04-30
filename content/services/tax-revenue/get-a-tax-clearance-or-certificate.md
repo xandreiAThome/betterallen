@@ -44,5 +44,6 @@ The Municipal Treasurer's Office issues Tax Clearance Certificates to property o
 ## Contact Information
 
 - **Office**: Municipal Treasurer's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0926-047-3303
 - **Hours**: Monday to Friday, office hours

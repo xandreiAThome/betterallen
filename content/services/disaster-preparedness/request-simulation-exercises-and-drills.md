@@ -58,7 +58,8 @@ The Municipal Disaster Risk Reduction and Management Office (MDRRMO) facilitates
 ## Contact Information
 
 - **Office**: Municipal Disaster Risk Reduction and Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0951-616-1397
 - **Hours**: Monday to Friday, office hours
 
 > Approval of the request depends on the availability of MDRRMO personnel and weather conditions on the scheduled date.

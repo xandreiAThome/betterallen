@@ -48,6 +48,7 @@ The Person with Disability Affairs Office (PDAO) under the MSWDO issues official
 
 ## Contact Information
 
-- **Office**: PDAO / Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours

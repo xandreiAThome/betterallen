@@ -63,7 +63,8 @@ No referral is required to walk in. Simply visit the MNAO during office hours.
 ## Contact Information
 
 - **Office**: Municipal Nutrition Action Office (MNAO), Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0915-074-5420
 - **Hours**: Monday to Friday, office hours
 
 > Bring your child's health or growth records if available. Interventions provided depend on current supply availability at the MNAO.

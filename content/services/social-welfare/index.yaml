@@ -27,10 +27,6 @@ pages:
     slug: 'access-intervention-and-diversion-programs-for-children-in-conflict-with-the-law'
     description: 'Access rehabilitation and diversion programs for children in conflict with the law (CICL).'
 
-  - name: 'Access early childhood education programs'
-    slug: 'access-early-childhood-education-programs'
-    description: 'Enroll your child in early childhood education programs offered by the municipal government.'
-
   - name: 'Get care and protection for children in need of special assistance'
     slug: 'get-care-and-protection-for-children-in-need-of-special-assistance'
     description: 'Access care and protection services for children who are at risk or need special assistance.'

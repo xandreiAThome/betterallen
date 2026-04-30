@@ -62,7 +62,7 @@ If your business has closed or stopped operations, you must file an application 
 ## Contact Information
 
 - **Office**: Business Permits and Licensing Section Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
 - **Hours**: Monday to Friday, office hours
 
 > File for business retirement promptly after closure to avoid accumulating unpaid taxes and penalties.

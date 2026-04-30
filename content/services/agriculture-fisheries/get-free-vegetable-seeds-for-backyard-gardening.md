@@ -35,7 +35,8 @@ No documentary requirements needed. Simply visit the MAO and make your request.
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours
 
 > Seed availability depends on current stock. Visit the MAO to check which vegetable varieties are currently available.

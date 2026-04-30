@@ -57,7 +57,8 @@ The Municipal Assessor's Office processes the transfer of Tax Declaration from o
 ## Contact Information
 
 - **Office**: Municipal Assessor's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0977-660-7974
 - **Hours**: Monday to Friday, office hours
 
 > Processing at the Municipal Assessor's Office takes approximately 3 days. You will then need to proceed to the Provincial Assessor's Office for final approval.

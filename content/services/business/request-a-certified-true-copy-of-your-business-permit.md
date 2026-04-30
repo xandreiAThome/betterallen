@@ -55,5 +55,5 @@ The Business Permits and Licensing Section Office (BPLS) issues certified true c
 ## Contact Information
 
 - **Office**: Business Permits and Licensing Section Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
 - **Hours**: Monday to Friday, office hours

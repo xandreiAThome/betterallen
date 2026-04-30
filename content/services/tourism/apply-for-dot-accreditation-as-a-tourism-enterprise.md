@@ -66,8 +66,9 @@ The Municipal Tourism Office (MTO) assists tourism-related businesses and enterp
 ## Contact Information
 
 - **Office**: Municipal Tourism Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
-- **Email**: allennorthernsamar2022@gmail.com
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0915-480-6538
+- **Email**: [allennorthernsamar2022@gmail.com](mailto:allennorthernsamar2022@gmail.com)
 - **Facebook**: [Allen Samar Tourism](https://web.facebook.com/allensamartourism)
 - **Hours**: Monday to Friday, office hours
 

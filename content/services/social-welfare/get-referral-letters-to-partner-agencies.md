@@ -48,7 +48,8 @@ The MSWDO issues referral letters to help residents access social services and a
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > Referral letters can be issued for agencies such as DSWD, DOH, DepEd, DOLE, and other partner organizations. Let MSWDO staff know which specific agency or program you are applying to.

@@ -53,7 +53,8 @@ Requirements vary depending on the specific program or service being requested. 
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours
 
 > Processing time may extend beyond 9 days depending on the requirements and processing timeline of the partner agency. The MAO will keep you informed of the status of your endorsement.

@@ -54,7 +54,8 @@ The MSWDO provides assistance, case management, and access to intervention servi
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > If a child is in immediate danger, contact the PNP or Barangay immediately. The MSWDO coordinates with multiple agencies to ensure the child's safety and recovery.

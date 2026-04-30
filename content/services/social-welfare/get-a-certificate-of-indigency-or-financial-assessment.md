@@ -47,5 +47,6 @@ The MSWDO issues Certificates of Indigency and Financial Assessment to residents
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours

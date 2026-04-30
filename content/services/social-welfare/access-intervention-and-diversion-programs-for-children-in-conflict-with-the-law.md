@@ -60,7 +60,8 @@ The MSWDO provides psycho-social intervention and diversion programs for childre
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > This program is handled in coordination with the BCPC, PNP, courts, and other agencies. All proceedings involving CICL are confidential and handled in the best interest of the child.

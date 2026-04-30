@@ -61,7 +61,8 @@ Be ready to give the following details depending on the type of emergency:
 ## Contact Information
 
 - **Office**: Municipal Disaster Risk Reduction and Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0951-616-1397
 - **Hours**: 24/7 for emergency response
 
 > In case of immediate life-threatening emergencies, call the MDRRMO hotline right away. Do not wait — provide as many details as possible so the response team can prepare the appropriate equipment before arriving.

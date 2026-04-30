@@ -72,5 +72,6 @@ The Municipal Engineering Office issues Electrical Permits for electrical instal
 ## Contact Information
 
 - **Office**: Municipal Engineering Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0945-4503-4847
 - **Hours**: Monday to Friday, office hours

@@ -64,7 +64,8 @@ The MSWDO provides financial assistance to indigent individuals and families fac
 ## Contact Information
 
 - **Office**: Municipal Social Welfare and Development Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0917-704-0680
 - **Hours**: Monday to Friday, office hours
 
 > Processing time may vary depending on the volume of applicants and availability of funds. Bring complete requirements to avoid delays.

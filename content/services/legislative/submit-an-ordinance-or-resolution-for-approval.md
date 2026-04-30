@@ -67,7 +67,7 @@ No specific documentary checklist is prescribed. Submit all relevant supporting 
 ## Contact Information
 
 - **Office**: Sangguniang Bayan Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
 - **Hours**: Monday to Friday, office hours; Session days as scheduled
 
 > The full processing time of approximately 9 days reflects the legislative process including committee hearings, plenary readings, and LCE approval. Actual timelines may vary depending on the SB session schedule and availability of signatories.

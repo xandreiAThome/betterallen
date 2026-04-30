@@ -48,7 +48,8 @@ The Human Resource Management Office (HRMO) receives applications for vacant pos
 ## Contact Information
 
 - **Office**: Human Resource Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0935-635-6229
 - **Hours**: Monday to Friday, office hours
 
 > Check the CSC website and the HRMO bulletin board for currently open positions before submitting your application.

@@ -52,7 +52,8 @@ The Municipal Assessor's Office issues official certifications related to real p
 ## Contact Information
 
 - **Office**: Municipal Assessor's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0977-660-7974
 - **Hours**: Monday to Friday, office hours
 
 > Visit the Assessor's Office directly to confirm what specific type of certification you need. Staff will advise on any additional requirements based on your case.

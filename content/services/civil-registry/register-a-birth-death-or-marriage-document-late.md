@@ -74,7 +74,8 @@ If a birth, death, or marriage was not registered within the required period, yo
 ## Contact Information
 
 - **Office**: Municipal Civil Registry Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0995-074-0903
 - **Hours**: Monday to Friday, office hours
 
 > Documents are subject to a mandatory 10-day posting period before they can be released. Plan your visit accordingly.

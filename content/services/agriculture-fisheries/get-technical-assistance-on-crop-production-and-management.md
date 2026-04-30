@@ -48,5 +48,6 @@ No prior documentary requirements needed. Simply visit the MAO during office hou
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours

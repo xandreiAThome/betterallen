@@ -57,7 +57,8 @@ The Municipal Assessor's Office processes applications for the reclassification 
 ## Contact Information
 
 - **Office**: Municipal Assessor's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0977-660-7974
 - **Hours**: Monday to Friday, office hours
 
 > A field inspection by the Assessor's Office is part of the reclassification process. Ensure your property is accessible on the scheduled inspection date.

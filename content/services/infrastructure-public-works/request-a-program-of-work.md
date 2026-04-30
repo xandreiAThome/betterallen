@@ -50,7 +50,8 @@ No prior documentary requirements needed. The Barangay Official or representativ
 ## Contact Information
 
 - **Office**: Municipal Engineering Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0945-4503-4847
 - **Hours**: Monday to Friday, office hours
 
 > Plan ahead — preparation of the Program of Work takes approximately 2 weeks. Coordinate with the MEO early to avoid delays in your project timeline.

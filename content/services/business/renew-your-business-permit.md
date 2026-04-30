@@ -66,7 +66,7 @@ All business owners must renew their Business or Mayor's Permit every year. Rene
 ## Contact Information
 
 - **Office**: Business Permits and Licensing Section Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
 - **Hours**: Monday to Friday, office hours
 
 > Business taxes are based on gross receipts or sales. Payment may be made annually, semi-annually, or quarterly.

@@ -54,7 +54,8 @@ The Municipal Assessor's Office processes applications for the conversion of lan
 ## Contact Information
 
 - **Office**: Municipal Assessor's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0977-660-7974
 - **Hours**: Monday to Friday, office hours
 
 > Land conversion applications require environmental and zoning clearances before submission. Secure the ECC and Locational Clearance from the relevant offices first.

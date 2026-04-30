@@ -61,7 +61,7 @@ If you are changing your business name, transferring ownership, or moving to a n
 ## Contact Information
 
 - **Office**: Business Permits and Licensing Section Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
 - **Hours**: Monday to Friday, office hours
 
 > Complete barangay-level closure and re-registration before filing the amendment at the Municipal level.

@@ -61,7 +61,8 @@ The Human Resource Management Office (HRMO) prepares and issues Contracts of Ser
 ## Contact Information
 
 - **Office**: Human Resource Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0935-635-6229
 - **Hours**: Monday to Friday, office hours
 
 > Processing time assumes all signatories are available. Delays may occur if any signatory is unavailable on the day of processing.

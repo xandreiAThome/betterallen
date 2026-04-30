@@ -45,7 +45,8 @@ The Human Resource Management Office (HRMO) accepts employment verification requ
 ## Contact Information
 
 - **Office**: Human Resource Management Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0935-635-6229
 - **Hours**: Monday to Friday, office hours
 
 > Confidential employment records will only be released to individuals who provide a written Authorization to Access Employee Records. Without this, only non-confidential information may be shared.

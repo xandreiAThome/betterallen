@@ -38,7 +38,8 @@ The Municipal Treasurer's Office prepares and issues Tax Bills and Letters of De
 ## Contact Information
 
 - **Office**: Municipal Treasurer's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0926-047-3303
 - **Hours**: Monday to Friday, office hours
 
 > A Letter of Delinquency is issued when real property taxes remain unpaid past the due date. Settle your account promptly to avoid further penalties.

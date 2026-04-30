@@ -53,7 +53,8 @@ The Municipal Treasurer's Office disburses funds for payrolls and payment vouche
 ## Contact Information
 
 - **Office**: Municipal Treasurer's Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0926-047-3303
 - **Hours**: Monday to Friday, office hours
 
 > All vouchers must have the complete required signatures from the concerned department heads, Budget Office, and Local Chief Executive before disbursement can proceed.

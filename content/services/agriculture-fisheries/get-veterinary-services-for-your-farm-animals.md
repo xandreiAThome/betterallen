@@ -43,7 +43,8 @@ No documentary requirements needed. Simply visit the MAO and describe your anima
 ## Contact Information
 
 - **Office**: Municipal Agriculture Office, Municipality of Allen
-- **Address**: Municipal Hall, Allen, Northern Samar
+- **Address**: [Kinabranan I, Allen, Northern Samar](https://maps.app.goo.gl/xJJYEboiH3wcnX3E8)
+- **Contact Number**: 0916-916-8960
 - **Hours**: Monday to Friday, office hours
 
 > Availability of veterinary drugs depends on current MAO supplies. For animals that cannot be brought to the MAO, a field visit may be arranged — processing time for field visits may take up to 1 day.
