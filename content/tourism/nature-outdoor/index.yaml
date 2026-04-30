@@ -3,6 +3,8 @@ places:
     slug: 'mount-allen-peak'
     description: 'A hiking destination offering panoramic views of the town and surrounding areas.'
     barangay: 'Cabadian'
+    category: 'Nature & Outdoor'
+    categoryColor: 'bg-emerald-100 text-emerald-700'
     mapsUrl: 'https://maps.google.com'
     featured: true
 
@@ -10,6 +12,8 @@ places:
     slug: 'allen-river-park'
     description: 'A riverside park with walking trails and picnic areas.'
     barangay: 'Poblacion'
+    category: 'Nature & Outdoor'
+    categoryColor: 'bg-emerald-100 text-emerald-700'
     image: '/images/tourism/allen-river-park.jpg'
     contact: '+63 555 111 2222'
 
@@ -17,4 +21,6 @@ places:
     slug: 'mangrove-conservation-area'
     description: 'A protected mangrove forest with boardwalks for nature walks and bird watching.'
     barangay: 'Balay'
+    category: 'Nature & Outdoor'
+    categoryColor: 'bg-emerald-100 text-emerald-700'
     mapsUrl: 'https://maps.google.com'

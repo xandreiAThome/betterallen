@@ -10,6 +10,8 @@ export interface Place {
   contact?: string;
   socialUrl?: string;
   featured?: boolean;
+  category?: string;
+  categoryColor?: string;
 }
 
 export interface Category {

@@ -5,8 +5,11 @@ import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 import { serviceCategories } from '../../data/yamlLoader';
+
+const PREVIEW_COUNT = 6;
 
 interface Subcategory {
   name: string;
@@ -24,11 +27,26 @@ interface Category {
 export default function ServicesSection({
   title,
   description,
+  preview = true,
 }: {
   title?: string;
   description?: string;
+  preview?: boolean;
 }) {
   const { t } = useTranslation();
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    setIsLargeScreen(mediaQuery.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsLargeScreen(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   const getIcon = (category: string) => {
     const IconComponent = LucideIcons[
@@ -37,7 +55,13 @@ export default function ServicesSection({
     return IconComponent ? <IconComponent className="h-6 w-6" /> : null;
   };
 
-  const displayedCategories = serviceCategories.categories as Category[];
+  const allCategories = serviceCategories.categories as Category[];
+  const displayedCategories =
+    preview && !isLargeScreen
+      ? allCategories.slice(0, PREVIEW_COUNT)
+      : allCategories;
+  const hasMore =
+    preview && !isLargeScreen && allCategories.length > PREVIEW_COUNT;
 
   return (
     <Section>
@@ -75,6 +99,17 @@ export default function ServicesSection({
           </Card>
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-8 text-center">
+          <Link
+            to="/services"
+            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
+          >
+            View All →
+          </Link>
+        </div>
+      )}
     </Section>
   );
 }

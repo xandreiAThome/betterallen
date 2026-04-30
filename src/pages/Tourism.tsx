@@ -13,6 +13,7 @@ import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 import { resolveLucideIcon } from '../lib/utils';
+import { MapPin } from 'lucide-react';
 
 const Tourism: React.FC = () => {
   const { category } = useParams();
@@ -115,7 +116,7 @@ const Tourism: React.FC = () => {
         description={categoryData.description}
         keywords={`${categoryData.category}, tourism, travel, attractions, ${import.meta.env.VITE_GOVERNMENT_NAME}`}
       />
-      <Section className="p-3 mb-12">
+      <Section className="p-3 mb-12" maxWidth="full">
         <Breadcrumbs
           items={[
             { label: 'Home', href: '/' },
@@ -139,50 +140,61 @@ const Tourism: React.FC = () => {
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {places.map(place => (
-              <Card key={place.slug} className="h-full">
-                <CardContent>
+              <Card
+                key={place.slug}
+                className="h-full drop-shadow-sm hover:border-primary-200 transition-colors duration-200"
+              >
+                <CardContent className="p-0!">
                   {place.image && (
                     <img
                       src={place.image}
                       alt={place.name}
-                      className="w-full h-48 object-cover rounded-md mb-4"
+                      className="w-full h-48 object-cover rounded-t-md"
                     />
                   )}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {place.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-2">
-                    {place.description}
-                  </p>
-                  <span className="inline-block px-2 py-1 text-xs font-medium rounded-sm bg-gray-100 text-gray-800 mb-2">
-                    {place.barangay}
-                  </span>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {place.mapsUrl && (
-                      <a
-                        href={place.mapsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-primary-600 hover:text-primary-700"
-                      >
-                        View on Maps
-                      </a>
-                    )}
-                    {place.contact && (
-                      <span className="text-xs text-gray-600">
-                        {place.contact}
-                      </span>
-                    )}
-                    {place.socialUrl && (
-                      <a
-                        href={place.socialUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-primary-600 hover:text-primary-700"
-                      >
-                        Social Media
-                      </a>
-                    )}
+                  <div className="p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      {place.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-2">
+                      {place.description}
+                    </p>
+                    <span
+                      className={`inline-block px-2 py-1 text-xs font-medium rounded-sm mb-2 mr-2 ${place.categoryColor ?? 'bg-primary-100 text-primary-700'}`}
+                    >
+                      {place.category ?? categoryData.category}
+                    </span>
+                    <span className="inline-flex items-center justify-center gap-1 px-2 py-1 text-xs font-medium rounded-sm bg-gray-100 text-gray-800 mb-2">
+                      <MapPin size={12} />
+                      {place.barangay}
+                    </span>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {place.mapsUrl && (
+                        <a
+                          href={place.mapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-primary-600 hover:text-primary-700"
+                        >
+                          View on Maps
+                        </a>
+                      )}
+                      {place.contact && (
+                        <span className="text-xs text-gray-600">
+                          {place.contact}
+                        </span>
+                      )}
+                      {place.socialUrl && (
+                        <a
+                          href={place.socialUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-primary-600 hover:text-primary-700"
+                        >
+                          Social Media
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
