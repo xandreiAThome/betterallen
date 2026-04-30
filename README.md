@@ -177,8 +177,11 @@ src/
 
 ## 👥 Contributors
 
-- **[iyanski](https://github.com/iyanski)** — Project creator and maintainer
-- **[Nicu Listana](https://github.com/niculistana)** — Contributor
+<a href="https://github.com/xandreiAThome/betterallen/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xandreiAThome/betterallen" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 ## 🤝 Contributing
 
