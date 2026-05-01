@@ -5,11 +5,16 @@ import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 import { serviceCategories } from '../../data/yamlLoader';
-
-const PREVIEW_COUNT = 6;
 
 interface Subcategory {
   name: string;
@@ -27,26 +32,12 @@ interface Category {
 export default function ServicesSection({
   title,
   description,
-  preview = true,
 }: {
   title?: string;
   description?: string;
   preview?: boolean;
 }) {
   const { t } = useTranslation();
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 1024px)');
-    setIsLargeScreen(mediaQuery.matches);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsLargeScreen(e.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   const getIcon = (category: string) => {
     const IconComponent = LucideIcons[
@@ -56,12 +47,9 @@ export default function ServicesSection({
   };
 
   const allCategories = serviceCategories.categories as Category[];
-  const displayedCategories =
-    preview && !isLargeScreen
-      ? allCategories.slice(0, PREVIEW_COUNT)
-      : allCategories;
-  const hasMore =
-    preview && !isLargeScreen && allCategories.length > PREVIEW_COUNT;
+  const mid = Math.floor(allCategories.length / 2);
+  const leftCat = allCategories.slice(0, mid);
+  const rightCat = allCategories.slice(mid);
 
   return (
     <Section>
@@ -69,47 +57,87 @@ export default function ServicesSection({
       <Text className="text-gray-600 mb-6">
         {description || t('services.description')}
       </Text>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {displayedCategories.map(category => (
-          <Card
-            key={category.slug}
-            hoverable
-            className="border-t-4 border-primary-500"
-          >
-            <Link
-              to={`/services/${category.slug}`}
-              className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+      <Carousel
+        className="mb-6 mx-2"
+        plugins={[Autoplay({ delay: 3000, stopOnInteraction: true })]}
+        opts={{ loop: true }}
+      >
+        <CarouselContent>
+          {leftCat.map(category => (
+            <CarouselItem
+              key={category.slug}
+              className="md:basis-1/3 basis:1/2 lg:basis-1/4 py-2"
             >
-              <CardContent className="flex flex-col h-full p-6">
-                <div className="flex gap-2">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
-                    {getIcon(category.icon)}
-                  </div>
+              <Card hoverable className="border-t-4 border-primary-500 h-60">
+                <Link
+                  to={`/services/${category.slug}`}
+                  className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+                >
+                  <CardContent className="flex flex-col h-full p-6">
+                    <div className="flex gap-2">
+                      <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                        {getIcon(category.icon)}
+                      </div>
 
-                  <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
-                    {t(`services.${category.slug}.category`, {
-                      defaultValue: category.category,
-                    })}
-                  </h3>
-                </div>
-                <Text className="text-gray-800">{category.description}</Text>
-              </CardContent>
-            </Link>
-          </Card>
-        ))}
-      </div>
+                      <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                        {t(`services.${category.slug}.category`, {
+                          defaultValue: category.category,
+                        })}
+                      </h3>
+                    </div>
+                    <Text className="text-gray-800">
+                      {category.description}
+                    </Text>
+                  </CardContent>
+                </Link>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="xl:ml-0 ml-8 " />
+        <CarouselNext className="xl:mr-0 mr-8 " />
+      </Carousel>
 
-      {hasMore && (
-        <div className="mt-8 text-center">
-          <Link
-            to="/services"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
-          >
-            View All →
-          </Link>
-        </div>
-      )}
+      <Carousel
+        className="mx-2"
+        plugins={[Autoplay({ delay: 3500, stopOnInteraction: true })]}
+        opts={{ loop: true }}
+      >
+        <CarouselContent>
+          {rightCat.map(category => (
+            <CarouselItem
+              key={category.slug}
+              className="md:basis-1/3 basis:1/2 lg:basis-1/4 py-2"
+            >
+              <Card hoverable className="border-t-4 border-primary-500 h-60">
+                <Link
+                  to={`/services/${category.slug}`}
+                  className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+                >
+                  <CardContent className="flex flex-col h-full p-6">
+                    <div className="flex gap-2">
+                      <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                        {getIcon(category.icon)}
+                      </div>
+
+                      <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                        {t(`services.${category.slug}.category`, {
+                          defaultValue: category.category,
+                        })}
+                      </h3>
+                    </div>
+                    <Text className="text-gray-800">
+                      {category.description}
+                    </Text>
+                  </CardContent>
+                </Link>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="xl:ml-0 ml-8" />
+        <CarouselNext className="xl:mr-0 mr-8 " />
+      </Carousel>
     </Section>
   );
 }

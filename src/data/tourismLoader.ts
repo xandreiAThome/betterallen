@@ -5,13 +5,13 @@ export interface Place {
   slug: string;
   description: string;
   barangay: string;
-  image?: string;
+  image: string;
   mapsUrl?: string;
   contact?: string;
   socialUrl?: string;
   featured?: boolean;
-  category?: string;
-  categoryColor?: string;
+  category: string;
+  categoryColor: string;
 }
 
 export interface Category {
@@ -19,6 +19,11 @@ export interface Category {
   slug: string;
   description: string;
   icon: string;
+  color: {
+    bg: string;
+    text: string;
+    border: string;
+  };
 }
 
 export interface TourismData {

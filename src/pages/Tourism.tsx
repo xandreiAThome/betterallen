@@ -13,8 +13,10 @@ import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 import { resolveLucideIcon } from '../lib/utils';
+import TourismCard from '@/components/ui/TourismCard';
 import { MapPin } from 'lucide-react';
-
+import { Button } from '@/components/ui/button';
+import { FiFacebook } from 'react-icons/fi';
 const Tourism: React.FC = () => {
   const { category } = useParams();
   const [places, setPlaces] = useState<Place[]>([]);
@@ -45,8 +47,45 @@ const Tourism: React.FC = () => {
           description={`Discover the best tourist spots, accommodations, and attractions in ${import.meta.env.VITE_GOVERNMENT_NAME}. Beaches, resorts, cafes, hotels, and more.`}
           keywords="tourism, travel, beaches, resorts, hotels, dining, attractions, tourist spots"
         />
+        <Section maxWidth="full" className="bg-primary-700 text-white py-16">
+          <Heading
+            level={5}
+            className="text-primary-200 inline-flex items-center gap-2 uppercase tracking-wide font-medium -mb-6"
+          >
+            <MapPin />
+            Allen, Northern Samar
+          </Heading>
+          <Heading className="tracking-wide">Tourism</Heading>
+          <Heading level={3} className="text-primary-100 -mt-4">
+            "The Gateway of Eastern Visayas"
+          </Heading>
+          <p className="text-primary-100 md:text-xl text-base max-w-xl mb-6">
+            The Town of many things that I don't know about. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit.
+          </p>
+
+          <div className="mb-6 flex gap-4">
+            <div className="px-4 py-1 font-bold bg-primary-600 border-primary-100/20 w-fit border rounded-4xl text-sm">
+              Allen yun
+            </div>
+            <div className="px-4 py-1 font-bold bg-primary-600 border-primary-100/20 w-fit border rounded-4xl text-sm">
+              Iraga
+            </div>
+          </div>
+
+          <Link to="https://www.facebook.com/allensamartourism/" className="">
+            <Button
+              variant={'link'}
+              className="bg-white text-primary-700 text-lg px-6 py-6 font-semibold cursor-pointer"
+            >
+              <FiFacebook />
+              Follow @allensamartourism
+            </Button>{' '}
+          </Link>
+        </Section>
+
         <Section className="p-3 mb-12">
-          <Heading>Tourism</Heading>
+          <Heading level={2}>Browse by Category</Heading>
           <Text className="text-gray-600 mb-6">
             Discover the best places to visit, stay, and dine in{' '}
             {import.meta.env.VITE_GOVERNMENT_NAME}.
@@ -64,10 +103,12 @@ const Tourism: React.FC = () => {
                   <Link key={cat.slug} to={`/tourism/${cat.slug}`}>
                     <Card
                       hoverable
-                      className="h-full border-t-4 border-primary-500"
+                      className={`h-full border-t-4 ${cat.color.border}`}
                     >
                       <CardContent>
-                        <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 w-fit">
+                        <div
+                          className={`${cat.color.bg} ${cat.color.text} p-3 rounded-md mb-4 w-fit`}
+                        >
                           <CatIcon className="h-6 w-6" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -140,64 +181,19 @@ const Tourism: React.FC = () => {
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {places.map(place => (
-              <Card
+              <TourismCard
                 key={place.slug}
-                className="h-full drop-shadow-sm hover:border-primary-200 transition-colors duration-200"
-              >
-                <CardContent className="p-0!">
-                  {place.image && (
-                    <img
-                      src={place.image}
-                      alt={place.name}
-                      className="w-full h-48 object-cover rounded-t-md"
-                    />
-                  )}
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      {place.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {place.description}
-                    </p>
-                    <span
-                      className={`inline-block px-2 py-1 text-xs font-medium rounded-sm mb-2 mr-2 ${place.categoryColor ?? 'bg-primary-100 text-primary-700'}`}
-                    >
-                      {place.category ?? categoryData.category}
-                    </span>
-                    <span className="inline-flex items-center justify-center gap-1 px-2 py-1 text-xs font-medium rounded-sm bg-gray-100 text-gray-800 mb-2">
-                      <MapPin size={12} />
-                      {place.barangay}
-                    </span>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {place.mapsUrl && (
-                        <a
-                          href={place.mapsUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs text-primary-600 hover:text-primary-700"
-                        >
-                          View on Maps
-                        </a>
-                      )}
-                      {place.contact && (
-                        <span className="text-xs text-gray-600">
-                          {place.contact}
-                        </span>
-                      )}
-                      {place.socialUrl && (
-                        <a
-                          href={place.socialUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs text-primary-600 hover:text-primary-700"
-                        >
-                          Social Media
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+                name={place.name}
+                description={place.description}
+                slug={place.slug}
+                barangay={place.barangay}
+                category={place.category}
+                categoryColor={place.categoryColor}
+                image={place.image}
+                mapsUrl={place.mapsUrl}
+                contact={place.contact}
+                socialUrl={place.socialUrl}
+              />
             ))}
           </div>
         )}
