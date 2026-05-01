@@ -10,13 +10,16 @@ import Government from './pages/Government';
 import Tourism from './pages/Tourism';
 import { Toaster } from './components/ui/sonner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/about'; // the index.tsx
+import AboutAllen from './pages/about/Allen';
+import AboutBetterGov from './pages/about/BetterGov';
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
         <NuqsAdapter>
-          <div className="min-h-screen flex flex-col">
+          <div className="flex flex-col min-h-screen">
             <Navbar />
             <ScrollToTop />
             <Routes>
@@ -35,6 +38,11 @@ function App() {
                 path="/government/:category/:documentSlug"
                 element={<Document categoryType="government" />}
               />
+              <Route path="/about" element={<About />}>
+                <Route index element={<AboutAllen />} />
+                <Route path="allen" element={<AboutAllen />} />
+                <Route path="bettergov" element={<AboutBetterGov />} />
+              </Route>
               <Route path="/:lang/:documentSlug" element={<Document />} />
               <Route path="/:documentSlug" element={<Document />} />
             </Routes>

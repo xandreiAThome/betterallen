@@ -2,6 +2,7 @@ import Hero from '../components/sections/Hero';
 import ServicesSection from '../components/home/ServicesSection';
 import TourismPreviewSection from '../components/home/TourismPreviewSection';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
+import AboutSection from '../components/home/AboutSection';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
         <ServicesSection />
         <TourismPreviewSection />
         <GovernmentActivitySection />
+        <AboutSection />
       </main>
     </>
   );

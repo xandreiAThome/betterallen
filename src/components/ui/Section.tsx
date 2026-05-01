@@ -24,7 +24,7 @@ export default function Section({
 }) {
   return (
     <section className={cn('py-12 bg-white', className)} id={id}>
-      <div className={cn(maxWidthClasses[maxWidth], 'mx-auto px-6')}>
+      <div className={cn(maxWidthClasses[maxWidth], 'mx-auto sm:px-6 px-4')}>
         {children}
       </div>
     </section>
