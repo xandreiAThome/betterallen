@@ -8,3 +8,64 @@ places:
     image: '/images/caba.jpg'
     mapsUrl: 'https://maps.app.goo.gl/pq4zygcsmtvFeb98A'
     featured: true
+  
+  # modify category-color accordingly
+  - name: 'Birmingham Allen'
+    slug: 'birmingham-allen'
+    description: 'A charming ocean-view resort offering six luxurious rooms, personalized service, and tranquil retreats.'
+    barangay: 'Kinabranan I'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/birmingham.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/TQXX5L1njGW8vbsX6'
+    featured: true
+  
+  - name: 'UMA'
+    slug: 'uma'
+    description: 'An enchanting oasis blending modern luxury with lush tropical surroundings and serene retreats.'
+    barangay: 'Kinabranan I'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/uma.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/D3n23Vnzn8SCnw356'
+    featured: true
+  
+  - name: 'Domina Andrea Beach Club'
+    slug: 'domina-andrea-beach-club'
+    description: 'A tropical beach club offering a serene paradise escape along the Northern Samar coast.'
+    barangay: 'Cabacungan'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/domina-andrea.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/xyTTHjLQd5G1XUQg7'
+    featured: true
+
+  - name: 'Imaga Rest House'
+    slug: 'imaga-rest-house'
+    description: 'A peaceful haven offering tranquil seaside views, gentle breezes, and a restful escape.'
+    barangay: 'Cabacungan'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/imaga-rest-house.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/gQ5C3c3MXMJCUhZZ6'
+    featured: true
+  
+  - name: Ba’ Tonying Beach Resort
+    slug: ba-tonying-beach-resort
+    description: A private waterfront resort featuring iconic sunsets, scenic rock outcrops, and delicious home-cooked meals.
+    barangay: 'Cabacungan'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/ba-tonying.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/Ld6UKkTgu9mN1ZbPA'
+    featured: true
+  
+  - name: Bantayan Resort
+    slug: bantayan-resort
+    description: A raw, untouched clifftop retreat where dramatic rock formations meet the sea.
+    barangay: 'Tasvilla'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/bantayan.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/6v6jvhzWCgameMoT7'
+    featured: true
