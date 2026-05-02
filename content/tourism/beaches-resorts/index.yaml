@@ -1,29 +1,10 @@
 places:
-  - name: 'Caba Beach Resort'
-    slug: 'caba-beach-resort'
+  - name: 'Caba Beach'
+    slug: 'caba-beach'
     description: 'A beautiful beachfront resort offering cottage rentals, swimming areas, and sunset views.'
-    barangay: 'Imaga'
+    barangay: 'Cabacungan'
     category: 'Beaches & Resorts'
     categoryColor: 'bg-sky-100 text-sky-700'
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBQ8d9Th7PP_kk19JSaI6VlSVni-FUcVT0A&s'
+    image: 'images/caba.jpg'
     mapsUrl: 'https://maps.app.goo.gl/pq4zygcsmtvFeb98A'
-    contact: '+63 123 456 7890'
-    featured: true
-
-  - name: 'Sandy Shores Beach'
-    slug: 'sandy-shores-beach'
-    description: 'A public beach with white sand and clear waters, perfect for swimming and picnics.'
-    barangay: 'Cabadian'
-    category: 'Beaches & Resorts'
-    categoryColor: 'bg-sky-100 text-sky-700'
-    image: '/images/tourism/sandy-shores-beach.jpg'
-    mapsUrl: 'https://maps.google.com'
-
-  - name: 'Sunset Cove'
-    slug: 'sunset-cove'
-    description: 'A secluded cove known for its stunning sunset views and peaceful atmosphere.'
-    barangay: 'Kinabjangan'
-    category: 'Beaches & Resorts'
-    categoryColor: 'bg-sky-100 text-sky-700'
-    mapsUrl: 'https://maps.google.com'
     featured: true

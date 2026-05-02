@@ -1,27 +1,10 @@
 places:
-  - name: 'Allen Heritage Museum'
+  - name: 'Gabaldon Ruins'
     slug: 'allen-heritage-museum'
-    description: 'A museum showcasing the history and culture of Allen and its people.'
+    description: "A historical school building ruin built during the American colonial era. Located in the Municipality's elementary school."
     barangay: 'Poblacion'
     category: 'Cultural Heritage'
     categoryColor: 'bg-rose-100 text-rose-700'
-    image: '/images/tourism/allen-heritage-museum.jpg'
-    mapsUrl: 'https://maps.google.com'
-    contact: '+63 555 333 4444'
+    image: '/images/gabaldon.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/j2HRLM19esqtssXS9'
     featured: true
-
-  - name: 'St. Joseph Church'
-    slug: 'st-joseph-church'
-    description: 'A historic church dating back to the Spanish colonial era.'
-    barangay: 'Poblacion'
-    category: 'Cultural Heritage'
-    categoryColor: 'bg-rose-100 text-rose-700'
-    mapsUrl: 'https://maps.google.com'
-
-  - name: 'Allen Town Plaza'
-    slug: 'allen-town-plaza'
-    description: 'The historic town plaza surrounded by heritage buildings.'
-    barangay: 'Poblacion'
-    category: 'Cultural Heritage'
-    categoryColor: 'bg-rose-100 text-rose-700'
-    image: '/images/tourism/allen-town-plaza.jpg'
