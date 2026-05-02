@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       />
       <main className="grow">
         <Hero />
-        <ServicesSection />
+        <ServicesSection preview={true} />
         <TourismPreviewSection />
         <GovernmentActivitySection />
         <AboutSection />
