@@ -60,8 +60,9 @@ const Tourism: React.FC = () => {
             "The Gateway of Eastern Visayas"
           </Heading>
           <p className="text-primary-100 md:text-xl text-base max-w-xl mb-6">
-            The Town of many things that I don't know about. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.
+            Discover the Gateway to the Samar Island, where stunning coastal
+            rock formations and beaches meet the warm hospitality of a vibrant
+            port town.
           </p>
 
           <div className="mb-6 flex gap-4">
@@ -69,14 +70,14 @@ const Tourism: React.FC = () => {
               Allen yun
             </div>
             <div className="px-4 py-1 font-bold bg-primary-600 border-primary-100/20 w-fit border rounded-4xl text-sm">
-              Iraga
+              Tara sa Norte!
             </div>
           </div>
 
           <Link to="https://www.facebook.com/allensamartourism/" className="">
             <Button
               variant={'link'}
-              className="bg-white text-primary-700 text-lg px-6 py-6 font-semibold cursor-pointer"
+              className="bg-white text-primary-700 text-base sm:text-lg px-6 py-6 font-semibold cursor-pointer"
             >
               <FiFacebook />
               Follow @allensamartourism
@@ -84,7 +85,7 @@ const Tourism: React.FC = () => {
           </Link>
         </Section>
 
-        <Section className="p-3 mb-12">
+        <Section className="p-3 my-12">
           <Heading level={2}>Browse by Category</Heading>
           <Text className="text-gray-600 mb-6">
             Discover the best places to visit, stay, and dine in{' '}
