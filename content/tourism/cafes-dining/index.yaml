@@ -26,7 +26,7 @@ places:
     barangay: 'Sabang II'
     category: 'Cafes & Dining'
     categoryColor: 'bg-amber-100 text-amber-700'
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCDrNN4sowisCBSxX8AVmkoRwRI3D28NMXw&s'
+    image: '/images/marias-garden.jpg'
     mapsUrl: 'https://maps.app.goo.gl/oUP6QfykXJCEcZNaA'
 
   - name: "Maria's Kitchen"
@@ -57,6 +57,7 @@ places:
     barangay: 'Kinabranan II'
     category: 'Cafes & Dining'
     categoryColor: 'bg-amber-100 text-amber-700'
+    contact: '0977 801 2626'
     image: '/images/rams-food-haus.jpg'
     mapsUrl: 'https://maps.app.goo.gl/CHWJK36qKQxZEgPL9'
   
@@ -91,3 +92,25 @@ places:
     contact: '0962 316 4190'
     mapsUrl: 'https://maps.app.goo.gl/vRzmfsTGU5pMwehV9'
     socialUrl: 'https://www.facebook.com/NGrandeSeaGardenResto'
+  
+  - name: "Reap Rap Bistro"
+    slug: "reaprap"
+    description: 'A top-view bistro and disco spot offering panoramic views, good food, and a lively night scene.'
+    barangay: 'Sabang I'
+    category: 'Cafes & Dining'
+    categoryColor: 'bg-amber-100 text-amber-700'
+    image: '/images/reaprap.jpg'
+    contact: '0962 316 4190'
+    mapsUrl: 'https://maps.app.goo.gl/8WPhezTXVHdR2HMZ6'
+    socialUrl: 'https://www.facebook.com/NGrandeSeaGardenResto'
+  
+  - name: "Sigad Billiards and Resto"
+    slug: "sigad"
+    description: 'A premier resto with top-tier billiards, Filipino-Chinese cuisine, and live music for a full night out.'
+    barangay: 'Kinabranan II'
+    category: 'Cafes & Dining'
+    categoryColor: 'bg-amber-100 text-amber-700'
+    image: '/images/sigad.jpg'
+    contact: '0969 261 4760'
+    mapsUrl: 'https://maps.app.goo.gl/uWDe4DFRe2QzFrQh6'
+    socialUrl: 'https://www.facebook.com/profile.php?id=61586142385311'
