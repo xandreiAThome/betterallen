@@ -303,7 +303,7 @@ const Navbar: React.FC = () => {
 
       {/* currency exchange, temp, and date */}
       <div
-        className={`bg-primary-800 transition-all duration-300 overflow-hidden ${
+        className={`bg-primary-900 transition-all duration-300 overflow-hidden ${
           isScrolled ? 'max-h-0' : 'max-h-14'
         }`}
       >

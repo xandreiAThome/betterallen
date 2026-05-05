@@ -4,6 +4,21 @@ import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
+import { motion } from 'motion/react';
+
+const listVariants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.06 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: 'easeOut' as const },
+  },
+};
 import { Link } from 'react-router-dom';
 
 import { governmentCategories } from '../../data/yamlLoader';
@@ -48,33 +63,37 @@ export default function GovernmentActivitySection({
         {description || t('governmentActivity.description')}
       </Text>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={listVariants}
+      >
         {displayedCategories.map(category => (
-          <Card
-            key={category.slug}
-            hoverable
-            className="border-t-4 border-primary-500"
-          >
-            <Link
-              to={`/government/${category.slug}`}
-              className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
-            >
-              <CardContent className="flex flex-col h-full p-6">
-                <div className="flex gap-2">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
-                    {getIcon(category.icon)}
-                  </div>
+          <motion.div key={category.slug} variants={itemVariants}>
+            <Card hoverable className="border-t-4 border-primary-500">
+              <Link
+                to={`/government/${category.slug}`}
+                className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+              >
+                <CardContent className="flex flex-col h-full p-6">
+                  <div className="flex gap-2">
+                    <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                      {getIcon(category.icon)}
+                    </div>
 
-                  <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
-                    {category.category}
-                  </h3>
-                </div>
-                <Text className="text-gray-800">{category.description}</Text>
-              </CardContent>
-            </Link>
-          </Card>
+                    <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                      {category.category}
+                    </h3>
+                  </div>
+                  <Text className="text-gray-800">{category.description}</Text>
+                </CardContent>
+              </Link>
+            </Card>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </Section>
   );
 }

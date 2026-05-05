@@ -6,6 +6,7 @@ import popularCategories from '../../data/popularService.json';
 import { ArrowRight } from 'lucide-react';
 import { resolveLucideIcon } from '../../lib/utils';
 import SearchBar from '../ui/SearchBar';
+import { motion } from 'motion/react';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -40,7 +41,12 @@ export default function Hero() {
           </div>
 
           {/* Right section with popular services and search */}
-          <div className="bg-white rounded-2xl p-6 shadow-2xl">
+          <motion.div
+            className="bg-white rounded-2xl p-6 shadow-2xl"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut' as const }}
+          >
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 {t('hero.search_service')}
@@ -67,7 +73,7 @@ export default function Hero() {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

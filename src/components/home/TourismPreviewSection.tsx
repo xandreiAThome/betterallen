@@ -17,6 +17,21 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { motion } from 'motion/react';
+
+const listVariants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.15 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: 'easeOut' as const },
+  },
+};
 
 const PREVIEW_COUNT = 3;
 
@@ -79,87 +94,112 @@ export default function TourismPreviewSection() {
 
   return (
     <Section className="border-0.5 border-gray-100 bg-gray-50" maxWidth="full">
-      <Heading
-        level={5}
-        className="text-primary-600 font-bold text-md mb-2 flex items-center gap-1 uppercase tracking-wider"
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: 'easeOut' as const }}
       >
-        <MapPin />
-        TOURISM
-      </Heading>
-      <Heading level={2}>Discover Allen</Heading>
-      <Text className="text-gray-600 mb-6">
-        Discover the best places to visit, stay, and dine in{' '}
-        {import.meta.env.VITE_GOVERNMENT_NAME}.
-      </Text>
+        <Heading
+          level={5}
+          className="text-primary-600 font-bold text-md mb-2 flex items-center gap-1 uppercase tracking-wider"
+        >
+          <MapPin />
+          TOURISM
+        </Heading>
+        <Heading level={2}>Discover Allen</Heading>
+        <Text className="text-gray-600 mb-6">
+          Discover the best places to visit, stay, and dine in{' '}
+          {import.meta.env.VITE_GOVERNMENT_NAME}.
+        </Text>
+      </motion.div>
 
       {tourismCategories.categories.length === 0 ? (
         <Text className="text-gray-500 text-center py-8">
           No tourism categories available at the moment.
         </Text>
       ) : (
-        <Carousel
-          className="mx-12"
-          plugins={[Autoplay({ delay: 3000, stopOnInteraction: true })]}
-          opts={{ loop: true }}
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={itemVariants}
         >
-          <CarouselContent className="py-2">
-            {tourismCategories.categories.map(cat => {
-              const CatIcon = resolveLucideIcon(cat.icon);
-              return (
-                <CarouselItem
-                  key={cat.slug}
-                  className="md:basis-1/3 basis:1/2 lg:basis-1/4"
-                >
-                  <Link key={cat.slug} to={`/tourism/${cat.slug}`}>
-                    <Card
-                      hoverable
-                      className={`h-full border-t-4 ${cat.color.border}`}
-                    >
-                      <CardContent>
-                        <div
-                          className={`${cat.color.bg} ${cat.color.text} p-3 rounded-md mb-4 w-fit`}
-                        >
-                          <CatIcon className="h-6 w-6" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                          {cat.category}
-                        </h3>
-                        <p className="text-sm text-gray-600">
-                          {cat.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          <Carousel
+            className="mx-12"
+            plugins={[Autoplay({ delay: 5000, stopOnInteraction: true })]}
+            opts={{ loop: true }}
+          >
+            <CarouselContent className="py-2">
+              {tourismCategories.categories.map(cat => {
+                const CatIcon = resolveLucideIcon(cat.icon);
+                return (
+                  <CarouselItem
+                    key={cat.slug}
+                    className="md:basis-1/3 basis:1/2 lg:basis-1/4"
+                  >
+                    <Link key={cat.slug} to={`/tourism/${cat.slug}`}>
+                      <Card
+                        hoverable
+                        className={`h-full border-t-4 ${cat.color.border}`}
+                      >
+                        <CardContent>
+                          <div
+                            className={`${cat.color.bg} ${cat.color.text} p-3 rounded-md mb-4 w-fit`}
+                          >
+                            <CatIcon className="h-6 w-6" />
+                          </div>
+                          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                            {cat.category}
+                          </h3>
+                          <p className="text-sm text-gray-600">
+                            {cat.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </motion.div>
       )}
 
       <Heading level={4} className="mb-6 mt-12">
         Popular Spots in Allen
       </Heading>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={listVariants}
+      >
         {featuredPlaces.map(place => (
-          <TourismCard
+          <motion.div
             key={place.slug}
-            name={place.name}
-            description={place.description}
-            slug={place.slug}
-            barangay={place.barangay}
-            category={place.category}
-            categoryColor={place.categoryColor}
-            image={place.image}
-            mapsUrl={place.mapsUrl}
-            contact={place.contact}
-            socialUrl={place.socialUrl}
-          />
+            variants={itemVariants}
+            className="h-full"
+          >
+            <TourismCard
+              name={place.name}
+              description={place.description}
+              slug={place.slug}
+              barangay={place.barangay}
+              category={place.category}
+              categoryColor={place.categoryColor}
+              image={place.image}
+              mapsUrl={place.mapsUrl}
+              contact={place.contact}
+              socialUrl={place.socialUrl}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="mt-8 text-center">
         <Link
