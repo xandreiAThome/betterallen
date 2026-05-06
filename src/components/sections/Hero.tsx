@@ -43,7 +43,7 @@ export default function Hero() {
           {/* Right section with popular services and search */}
           <motion.div
             className="bg-white rounded-2xl p-6 shadow-2xl"
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' as const }}
           >
