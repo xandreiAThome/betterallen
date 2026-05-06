@@ -49,6 +49,21 @@
     },
     "disaster-preparedness": {
       "category": "Disaster Preparedness"
+    },
+    "tax-revenue": {
+      "category": "Tax & Revenue"
+    },
+    "civil-registry": {
+      "category": "Civil Registry"
+    },
+    "employment": {
+      "category": "Employment & Jobs"
+    },
+    "tourism": {
+      "category": "Tourism & Culture"
+    },
+    "legislative": {
+      "category": "Legislative"
     }
   },
   "governmentActivity": {

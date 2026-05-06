@@ -49,6 +49,21 @@
     },
     "disaster-preparedness": {
       "category": "Paghahanda sa Sakuna"
+    },
+    "tax-revenue": {
+      "category": "Buwis"
+    },
+    "civil-registry": {
+      "category": "Patalaang Sibil"
+    },
+    "employment": {
+      "category": "Empleyo at Trabaho"
+    },
+    "tourism": {
+      "category": "Turismo at Kultura"
+    },
+    "legislative": {
+      "category": "Lehislatibo"
     }
   },
   "governmentActivity": {
