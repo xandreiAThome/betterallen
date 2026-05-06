@@ -59,7 +59,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className = '' }) => {
               {item.label.charAt(0).toUpperCase() + item.label.slice(1)}
             </Link>
           ) : (
-            <span className="text-gray-900 font-medium" aria-current="page">
+            <span className="text-primary-50 font-medium" aria-current="page">
               {item.label.charAt(0).toUpperCase() + item.label.slice(1)}
             </span>
           )}

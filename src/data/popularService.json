@@ -38,7 +38,7 @@
     {
       "labelKey": "services.civil-registry.category",
       "label": "Civil Registry",
-      "slug": "civil-registry",
+      "slug": "civil-registr            y",
       "icon": "FileStack",
       "color": "text-purple-600 bg-purple-50"
     }

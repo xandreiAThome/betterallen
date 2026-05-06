@@ -4,34 +4,9 @@ import { Heading } from '../../components/ui/Heading';
 import { Text } from '../../components/ui/Text';
 import Breadcrumbs from '../../components/ui/Breadcrumbs';
 import { resolveLucideIcon } from '../../lib/utils';
-import yaml from 'js-yaml';
-import allenYaml from '../../data/about_allen.yaml?raw';
+import { aboutAllenData } from '../../data/yamlLoader';
 
-interface Stat {
-  label: string;
-  value: string;
-  sublabel?: string;
-  asOf?: string;
-  icon?: string;
-}
-
-interface TimelineEntry {
-  year: string;
-  event: string;
-}
-
-interface AllenData {
-  name: string;
-  province: string;
-  description: string;
-  history: string;
-  geography: string;
-  economy: string;
-  stats: Stat[];
-  timeline: TimelineEntry[];
-}
-
-const data = yaml.load(allenYaml) as AllenData;
+const data = aboutAllenData;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },

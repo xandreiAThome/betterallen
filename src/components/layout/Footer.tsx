@@ -5,6 +5,7 @@ import {
   Instagram,
   Youtube,
   CheckCircle2,
+  ExternalLink,
 } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
@@ -75,7 +76,7 @@ const Footer: React.FC = () => {
                       to={link.href}
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
-                      {link.label}
+                      {t(link.label)}
                     </Link>
                   </li>
                 ))}
@@ -103,10 +104,11 @@ const Footer: React.FC = () => {
                 Terms of Use
               </a> */}
               <Link
-                to="https://github.com/bettergovph/bettergov"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
+                to="https://github.com/xandreiAThome/betterallen"
+                className="text-gray-400 gap-1 hover:text-white text-sm transition-colors inline-flex items-center"
               >
                 Contribute at GitHub
+                <ExternalLink size={12} className="text-gray-600" />
               </Link>
               <Link
                 to="/sitemap"
@@ -114,12 +116,6 @@ const Footer: React.FC = () => {
               >
                 Sitemap
               </Link>
-              <a
-                href="/accessibility"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Accessibility
-              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Hero from '../components/sections/Hero';
-import ServicesSection from '../components/home/ServicesSection';
+// import ServicesSection from '../components/home/ServicesSection';
 import TourismPreviewSection from '../components/home/TourismPreviewSection';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
 import AboutSection from '../components/home/AboutSection';
@@ -16,11 +16,11 @@ const Home: React.FC = () => {
       />
       <main className="grow">
         <Hero />
-        <ServicesSection preview={true} />
+        {/* <ServicesSection preview={true} /> */}
         <TourismPreviewSection />
         <GovernmentActivitySection />
-        <ContactPreviewSection />
         <AboutSection />
+        <ContactPreviewSection />
       </main>
     </>
   );

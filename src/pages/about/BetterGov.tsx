@@ -4,25 +4,9 @@ import { Heading } from '../../components/ui/Heading';
 import { Text } from '../../components/ui/Text';
 import Breadcrumbs from '../../components/ui/Breadcrumbs';
 import { resolveLucideIcon } from '../../lib/utils';
-import yaml from 'js-yaml';
-import betterGovYaml from '../../data/about_bettergov.yaml?raw';
+import { aboutBetterGovData } from '../../data/yamlLoader';
 
-interface Benefit {
-  audience: string;
-  icon?: string;
-  description: string;
-}
-
-interface BetterGovData {
-  name: string;
-  tagline: string;
-  description: string;
-  mission: string;
-  why: string;
-  benefits: Benefit[];
-}
-
-const data = yaml.load(betterGovYaml) as BetterGovData;
+const data = aboutBetterGovData;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },

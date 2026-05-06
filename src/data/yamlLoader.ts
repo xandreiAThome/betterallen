@@ -1,5 +1,9 @@
 import yaml from 'js-yaml';
 
+export const loadYamlData = <T>(raw: string): T => {
+  return yaml.load(raw) as T;
+};
+
 // Type definitions for the services data
 export interface Subcategory {
   name: string;
@@ -28,9 +32,50 @@ export interface CategoryIndexData {
   pages: Subcategory[];
 }
 
+export interface AllenStat {
+  label: string;
+  value: string;
+  sublabel?: string;
+  asOf?: string;
+  icon?: string;
+}
+
+export interface AllenTimelineEntry {
+  year: string;
+  event: string;
+}
+
+export interface AboutAllenData {
+  name: string;
+  province: string;
+  description: string;
+  history: string;
+  geography: string;
+  economy: string;
+  stats: AllenStat[];
+  timeline: AllenTimelineEntry[];
+}
+
+export interface BetterGovBenefit {
+  audience: string;
+  icon?: string;
+  description: string;
+}
+
+export interface AboutBetterGovData {
+  name: string;
+  tagline: string;
+  description: string;
+  mission: string;
+  why: string;
+  benefits: BetterGovBenefit[];
+}
+
 // Import the YAML file as raw text
 import servicesYamlContent from './services.yaml?raw';
 import governmentActivitiesYamlContent from './government.yaml?raw';
+import aboutAllenYamlContent from './about_allen.yaml?raw';
+import aboutBetterGovYamlContent from './about_bettergov.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -76,6 +121,13 @@ export const serviceCategories: CategoryData = yaml.load(
 export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
+
+export const aboutAllenData = loadYamlData<AboutAllenData>(
+  aboutAllenYamlContent
+);
+export const aboutBetterGovData = loadYamlData<AboutBetterGovData>(
+  aboutBetterGovYamlContent
+);
 
 export interface CategoryIndex {
   title?: string;

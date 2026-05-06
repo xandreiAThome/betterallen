@@ -13,6 +13,7 @@ interface PageBannerProps {
   title: string;
   description: string;
   className?: string;
+  hideSearch?: boolean;
 }
 
 const PageBanner = ({
@@ -20,6 +21,7 @@ const PageBanner = ({
   title,
   description,
   className = '',
+  hideSearch = false,
 }: PageBannerProps) => {
   return (
     <div
@@ -40,12 +42,14 @@ const PageBanner = ({
           <Text className="mx-auto mt-2 max-w-lg text-sm leading-6 text-primary-100 sm:text-base">
             {description}
           </Text>
-          <div className="mx-auto mt-7 w-full max-w-xl">
-            <SearchBar
-              variant="pill"
-              placeholder="Search services (e.g., birth certificate, business permit)"
-            />
-          </div>
+          {!hideSearch && (
+            <div className="mx-auto mt-7 w-full max-w-xl">
+              <SearchBar
+                variant="pill"
+                placeholder="Search services (e.g., birth certificate, business permit)"
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
