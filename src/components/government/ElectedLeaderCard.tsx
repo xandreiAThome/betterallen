@@ -21,7 +21,7 @@ export default function ElectedLeaderCard({
             className={`flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm ${
               isMayor
                 ? 'bg-white border-primary-500 text-primary-600'
-                : 'bg-white text-gray-400 border-orange-400'
+                : 'bg-white text-gray-700 border-secondary-400'
             }`}
           >
             <Icon className="h-8 w-8 md:h-10 md:w-10" />
@@ -58,11 +58,11 @@ export default function ElectedLeaderCard({
             <div className="flex flex-col gap-3 text-left">
               {leader.contact?.phone && (
                 <div className="flex items-center gap-3">
-                  <div className="bg-gray-50 p-2 rounded-lg text-gray-400 border border-gray-100 shrink-0">
+                  <div className="bg-gray-50 p-2 rounded-lg text-gray-600 border border-gray-100 shrink-0">
                     <Phone className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-[10px] font-bold tracking-widest uppercase text-gray-400">
+                    <p className="text-[10px] font-bold tracking-widest uppercase text-gray-600">
                       Office Line
                     </p>
                     <a
@@ -76,11 +76,11 @@ export default function ElectedLeaderCard({
               )}
               {leader.contact?.email && (
                 <div className="flex items-center gap-3">
-                  <div className="bg-gray-50 p-2 rounded-lg text-gray-400 border border-gray-100 shrink-0">
+                  <div className="bg-gray-50 p-2 rounded-lg text-gray-600 border border-gray-100 shrink-0">
                     <Mail className="h-4 w-4" />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-[10px] font-bold tracking-widest uppercase text-gray-400">
+                    <p className="text-[10px] font-bold tracking-widest uppercase text-gray-600">
                       Email Address
                     </p>
                     <a

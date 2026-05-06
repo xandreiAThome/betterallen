@@ -35,7 +35,7 @@ export default function BarangaysIndex() {
                   <CardContent className="flex h-full flex-col space-y-4 p-4">
                     {/* Header Row */}
                     <div className="flex items-start gap-3">
-                      <div className="bg-kapwa-bg-surface text-kapwa-text-brand border-kapwa-border-brand shrink-0 rounded-lg border p-2 shadow-sm">
+                      <div className="bg-kapwa-bg-surface text-primary-600 border-primary-600 shrink-0 rounded-lg border p-2 shadow-sm">
                         <MapPinIcon className="h-5 w-5" />
                       </div>
                       <div className="min-w-0 flex-1">
