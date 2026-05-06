@@ -62,7 +62,7 @@ places:
     mapsUrl: 'https://maps.app.goo.gl/Ld6UKkTgu9mN1ZbPA'
     socialUrl: 'https://www.facebook.com/profile.php?id=100089671098646'
     featured: true
-  
+
   - name: Bantayan Resort
     slug: bantayan-resort
     description: A raw, untouched clifftop retreat where dramatic rock formations meet the sea.
