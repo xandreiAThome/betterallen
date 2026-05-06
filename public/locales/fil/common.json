@@ -68,13 +68,14 @@
     "copyright": "© 2026 BetterGov. Ang lahat ng nilalaman ay nasa pampublikong domain maliban kung iba ang inilaan."
   },
   "navbar": {
-    "home": "Bahay",
+    "home": "Tahanan",
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
     "tourism": "Turismo",
     "hotlines": "Mga Hotline",
     "holidays": "Mga Pista",
-    "about": "Tungkol sa Amin"
+    "about": "Tungkol sa Amin",
+    "contact": "Makipag-ugnayan"
   },
   "joinUs": {
     "stripTitle": "🚀 Sumali sa #CivicTech Revolution",

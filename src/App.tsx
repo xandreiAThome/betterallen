@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/about'; // the index.tsx
 import AboutAllen from './pages/about/Allen';
 import AboutBetterGov from './pages/about/BetterGov';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="/government" element={<Government />} />
               <Route path="/tourism/:category" element={<Tourism />} />
               <Route path="/tourism" element={<Tourism />} />
+              <Route path="/contact" element={<Contact />} />
               <Route
                 path="/government/:category/:documentSlug"
                 element={<Document categoryType="government" />}
