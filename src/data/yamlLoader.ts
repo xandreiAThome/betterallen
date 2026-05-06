@@ -32,6 +32,61 @@ export interface CategoryIndexData {
   pages: Subcategory[];
 }
 
+export interface ExecutiveOfficial {
+  slug: string;
+  name: string;
+  role: string;
+  office?: string;
+  address?: string;
+  contact?: {
+    email?: string;
+    phone?: string;
+  };
+  website?: string;
+  isElected?: boolean;
+  personId?: string;
+}
+
+export interface LegislativeOfficial {
+  name: string;
+  position: string;
+  contact?: {
+    email?: string;
+    phone?: string;
+  };
+  website?: string;
+  personId?: string;
+  committee_chair?: string[];
+  committee_vice_chair?: string[];
+  committee_member?: string[];
+}
+
+export interface BarangayOfficial {
+  role: string;
+  name: string | null;
+  contact: string | null;
+  email: string | null;
+}
+
+export interface Barangay {
+  slug: string;
+  barangay_name: string;
+  address: string | null;
+  trunkline: string[] | null;
+  website: string | null;
+  officials: BarangayOfficial[] | null;
+}
+
+export interface MunicipalOffice {
+  slug: string;
+  office_name: string;
+  website?: string;
+  department_head?: {
+    name: string;
+    contact?: string;
+  };
+}
+
 export interface AllenStat {
   label: string;
   value: string;
@@ -50,10 +105,11 @@ export interface AboutAllenData {
   province: string;
   description: string;
   history: string;
-  geography: string;
-  economy: string;
+  geography?: string;
+  economy?: string;
   stats: AllenStat[];
   timeline: AllenTimelineEntry[];
+  card_description?: string;
 }
 
 export interface BetterGovBenefit {
@@ -64,11 +120,12 @@ export interface BetterGovBenefit {
 
 export interface AboutBetterGovData {
   name: string;
-  tagline: string;
+  tagline?: string;
   description: string;
   mission: string;
   why: string;
   benefits: BetterGovBenefit[];
+  card_description?: string;
 }
 
 // Import the YAML file as raw text
@@ -92,7 +149,12 @@ import civilRegistryIndex from '../../content/services/civil-registry/index.yaml
 import taxRevenueIndex from '../../content/services/tax-revenue/index.yaml?raw';
 import employmentIndex from '../../content/services/employment/index.yaml?raw';
 import tourismIndex from '../../content/services/tourism/index.yaml?raw';
-import legislativeIndex from '../../content/services/legislative/index.yaml?raw';
+import electedOfficialsIndex from '../../content/government/elected-officials/index.yaml?raw';
+import municipalOfficesIndex from '../../content/government/municipal-offices/index.yaml?raw';
+import barangaysIndedex from '../../content/government/barangays/index.yaml?raw';
+import governmentIndex from '../../content/government/index.yaml?raw';
+import executiveIndex from '../../content/government/elected-officials/executive/index.yaml?raw';
+import legislativeIndex from '../../content/government/elected-officials/legislative/index.yaml?raw';
 
 // Create a mapping of category slugs to their YAML content
 const categoryIndexMap: { [key: string]: string } = {
@@ -110,8 +172,36 @@ const categoryIndexMap: { [key: string]: string } = {
   'tax-revenue': taxRevenueIndex,
   employment: employmentIndex,
   tourism: tourismIndex,
+  // 'departments': departmentsIndex, // Removed to fix undefined error
+  government: governmentIndex,
+  'elected-officials': electedOfficialsIndex,
+  executive: executiveIndex,
   legislative: legislativeIndex,
+  'municipal-offices': municipalOfficesIndex,
+  barangays: barangaysIndedex,
 };
+
+function parseYamlArray<T>(yamlContent: string): T[] {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (Array.isArray(parsed)) return parsed as T[];
+    if (parsed && typeof parsed === 'object' && 'officials' in parsed)
+      return (parsed as { officials: T[] }).officials;
+    return [];
+  } catch {
+    return [];
+  }
+}
+
+function parseYamlObject<T>(yamlContent: string, fallback: T): T {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (parsed && typeof parsed === 'object') return parsed as T;
+    return fallback;
+  } catch {
+    return fallback;
+  }
+}
 
 // Parse the YAML content
 export const serviceCategories: CategoryData = yaml.load(
@@ -122,11 +212,44 @@ export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
 
-export const aboutAllenData = loadYamlData<AboutAllenData>(
-  aboutAllenYamlContent
+export const executiveOfficials: ExecutiveOfficial[] =
+  parseYamlArray(executiveIndex);
+
+export const legislativeOfficials: LegislativeOfficial[] =
+  parseYamlArray(legislativeIndex);
+
+export const municipalOffices: MunicipalOffice[] = parseYamlArray(
+  municipalOfficesIndex
 );
-export const aboutBetterGovData = loadYamlData<AboutBetterGovData>(
-  aboutBetterGovYamlContent
+
+export const barangays: Barangay[] = parseYamlArray(barangaysIndedex);
+
+export const aboutAllenData: AboutAllenData = parseYamlObject(
+  aboutAllenYamlContent,
+  {
+    name: '',
+    province: '',
+    description: '',
+    history: '',
+    geography: '',
+    economy: '',
+    stats: [],
+    timeline: [],
+    card_description: '',
+  }
+);
+
+export const aboutBetterGovData: AboutBetterGovData = parseYamlObject(
+  aboutBetterGovYamlContent,
+  {
+    name: '',
+    tagline: '',
+    description: '',
+    mission: '',
+    why: '',
+    benefits: [],
+    card_description: '',
+  }
 );
 
 export interface CategoryIndex {
