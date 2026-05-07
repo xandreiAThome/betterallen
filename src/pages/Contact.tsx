@@ -20,8 +20,7 @@ const Contact = () => {
       />
       <PageBanner
         title="Contact Us"
-        description="Get in touch with us and access emergency hotlines."
-        hideSearch={true}
+        description="Get in touch with the municipal office for general inquiries and access emergency hotlines."
       />
 
       <Section className="py-12" maxWidth="6xl">

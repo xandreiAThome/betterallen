@@ -16,6 +16,7 @@ import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 import { resolveLucideIcon } from '../lib/utils';
 import PageBanner from '@/components/ui/PageBanner';
+import SearchBar from '@/components/ui/SearchBar';
 
 const Services: React.FC = () => {
   const { category } = useParams();
@@ -60,6 +61,12 @@ const Services: React.FC = () => {
           breadcrumbs={breadcrumbs}
           title="Local Government Services"
           description="Explore official municipal services from the Citizens Charter."
+          search={
+            <SearchBar
+              variant="pill"
+              placeholder="Search services (e.g., birth certificate, business permit)"
+            />
+          }
         />
 
         <ServicesSection

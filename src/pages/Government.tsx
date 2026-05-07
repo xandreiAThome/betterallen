@@ -1,11 +1,10 @@
 import { Link, Outlet, useLocation, Navigate } from 'react-router-dom';
 import { UsersIcon, Building2Icon, HomeIcon, ChevronRight } from 'lucide-react';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
 import SEO from '../components/SEO';
 import Section from '../components/ui/Section';
 import classNames from 'classnames';
 import ElectedOfficialsNav from '../components/government/ElectedOfficialsNav';
+import PageBanner from '@/components/ui/PageBanner';
 
 const branches = [
   {
@@ -34,6 +33,12 @@ const branches = [
   },
 ];
 
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Allen', href: '/about/allen' },
+];
+
 const Government: React.FC = () => {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -56,15 +61,14 @@ const Government: React.FC = () => {
         description={`Access information on elected leaders, municipal departments, and the component barangays of ${govName}.`}
         keywords="government, elected officials, municipal offices, barangays, local government"
       />
-      <Section className="p-3 mb-12">
-        <Heading level={1} className="mb-2">
-          Government
-        </Heading>
-        <Text className="mb-8 text-gray-600">
-          Access information on elected leaders, municipal departments, and the
-          component barangays of {govName}.
-        </Text>
 
+      <PageBanner
+        breadcrumbs={breadcrumbs}
+        title="Government"
+        description={`Access information on elected leaders, municipal departments, and component barangays.`}
+      />
+
+      <Section className="p-3 mb-12">
         {/* ── Desktop grid (md+) ── */}
         <div className="hidden md:grid grid-cols-3 gap-4">
           {branches.map(branch => {

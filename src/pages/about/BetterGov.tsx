@@ -2,9 +2,9 @@ import SEO from '../../components/SEO';
 import Section from '../../components/ui/Section';
 import { Heading } from '../../components/ui/Heading';
 import { Text } from '../../components/ui/Text';
-import Breadcrumbs from '../../components/ui/Breadcrumbs';
 import { resolveLucideIcon } from '../../lib/utils';
 import { aboutBetterGovData } from '../../data/yamlLoader';
+import PageBanner from '@/components/ui/PageBanner';
 
 const data = aboutBetterGovData;
 
@@ -23,21 +23,11 @@ const AboutBetterGov: React.FC = () => {
         keywords="BetterGov, BetterLGU, local government, civic technology, Philippines"
       />
 
-      {/* Blue hero banner */}
-      <div className="py-12 text-white bg-linear-to-r from-primary-600 to-primary-700">
-        <div className="container px-6 mx-auto text-center sm:px-12 lg:px-20">
-          <Breadcrumbs
-            className="justify-center mb-6 text-white"
-            items={breadcrumbs}
-          />
-          <Heading level={1} className="text-white">
-            {data.name}
-          </Heading>
-          <Text className="mt-4 text-primary-100 max-w-none sm:px-8 lg:px-40">
-            {data.description}
-          </Text>
-        </div>
-      </div>
+      <PageBanner
+        breadcrumbs={breadcrumbs}
+        title={data.name}
+        description="Learn about the volunteer initiative making local government information accessible to every Filipino."
+      />
 
       <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">
         {/* Mission — primary blue */}

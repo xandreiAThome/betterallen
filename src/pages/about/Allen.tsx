@@ -2,9 +2,9 @@ import SEO from '../../components/SEO';
 import Section from '../../components/ui/Section';
 import { Heading } from '../../components/ui/Heading';
 import { Text } from '../../components/ui/Text';
-import Breadcrumbs from '../../components/ui/Breadcrumbs';
 import { resolveLucideIcon } from '../../lib/utils';
 import { aboutAllenData } from '../../data/yamlLoader';
+import PageBanner from '@/components/ui/PageBanner';
 
 const data = aboutAllenData;
 
@@ -23,21 +23,11 @@ const AboutAllen: React.FC = () => {
         keywords={`${data.name}, ${data.province}, municipality, history, Philippines`}
       />
 
-      {/* Blue hero banner */}
-      <div className="py-12 text-white bg-linear-to-r from-primary-600 to-primary-700">
-        <div className="container px-6 mx-auto text-center sm:px-12 lg:px-20">
-          <Breadcrumbs
-            className="justify-center mb-6 text-white"
-            items={breadcrumbs}
-          />
-          <Heading level={1} className="text-white">
-            {data.name}, {data.province}
-          </Heading>
-          <Text className="mt-4 text-primary-100 max-w-none sm:px-8 lg:px-40">
-            {data.description}
-          </Text>
-        </div>
-      </div>
+      <PageBanner
+        breadcrumbs={breadcrumbs}
+        title={`${data.name}, ${data.province}`}
+        description="Learn about the history, geography, and community of Allen."
+      />
 
       <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">
         {/* Key Statistics */}
