@@ -4,11 +4,13 @@ import Section from '../components/ui/Section';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { resolveLucideIcon } from '../lib/utils';
 import hotlinesData from '../data/hotlines.json';
+import { FacebookIcon } from 'lucide-react';
 
 const Contact = () => {
   const lguName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government';
   const dummyEmail = import.meta.env.VITE_CONTACT_EMAIL;
   const dummyContact = import.meta.env.VITE_CONTACT_PHONE;
+  const fb = import.meta.env.VITE_FACEBOOK_URL;
 
   return (
     <>
@@ -27,10 +29,10 @@ const Contact = () => {
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center space-x-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                <div className="flex items-center justify-center sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-primary-100 text-primary-600">
                   {(() => {
                     const MailIcon = resolveLucideIcon('Mail');
-                    return <MailIcon className="w-6 h-6" />;
+                    return <MailIcon className="sm:w-6 sm:h-6 w-5 h-5" />;
                   })()}
                 </div>
                 <div>
@@ -51,17 +53,40 @@ const Contact = () => {
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center space-x-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                <div className="flex items-center justify-center sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-primary-100 text-primary-600">
                   {(() => {
                     const PhoneIcon = resolveLucideIcon('Phone');
-                    return <PhoneIcon className="w-6 h-6" />;
+                    return <PhoneIcon className="sm:w-6 sm:h-6 w-5 h-5" />;
                   })()}
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">
                     Contact Number
                   </h3>
-                  <p className="text-gray-700">{dummyContact}</p>
+                  <a
+                    href={`tel:${dummyContact}`}
+                    className="text-gray-700 hover:text-primary-600 text-sm sm:text-base"
+                  >
+                    {dummyContact}
+                  </a>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center justify-center sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-primary-100 text-primary-600">
+                  <FacebookIcon className="sm:w-6 sm:h-6 w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-gray-900">
+                    Facebook Page
+                  </h3>
+                  <a className="text-primary-700" href={fb}>
+                    {fb}
+                  </a>
                 </div>
               </div>
             </CardContent>
@@ -151,9 +176,12 @@ const Contact = () => {
                     <h3 className="mb-2 text-lg font-medium text-gray-900">
                       {hotline.name}
                     </h3>
-                    <p className="font-mono text-xl font-bold text-red-600">
+                    <a
+                      href={`tel:${hotline.number}`}
+                      className="font-mono text-xl font-bold text-red-600 hover:text-red-700"
+                    >
                       {hotline.number}
-                    </p>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
