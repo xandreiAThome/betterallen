@@ -69,7 +69,7 @@ export default function GovernmentActivitySection({
   const displayedCategories = governmentCategories.categories as Category[];
 
   return (
-    <Section id="#government">
+    <Section id="government">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -83,79 +83,101 @@ export default function GovernmentActivitySection({
       </motion.div>
 
       {(mayor || viceMayor) && (
-        <motion.div
-          className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={listVariants}
-        >
-          {mayor && (
-            <motion.div variants={itemVariants}>
-              <Card className="group h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <Link
-                  to="/government/elected-officials"
-                  className="inline-flex h-full w-full justify-center"
-                >
-                  <CardContent className="flex h-full flex-col items-center space-y-4 py-6 px-4 text-center">
-                    <div className="relative">
-                      <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white border-primary-500 text-primary-600">
-                        <Landmark className="h-8 w-8 md:h-10 md:w-10" />
+        <>
+          <Heading level={4} className="mb-6 mt-8">
+            Elected Officials
+          </Heading>
+          <motion.div
+            className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={listVariants}
+          >
+            {mayor && (
+              <motion.div variants={itemVariants}>
+                <Card className="group h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                  <Link
+                    to="/government/elected-officials"
+                    aria-label={`View Mayor information - Hon. ${toTitleCase(mayor.name)}`}
+                    className="inline-flex h-full w-full justify-center"
+                  >
+                    <CardContent className="flex h-full flex-col items-center space-y-4 py-6 px-4 text-center">
+                      <div className="relative">
+                        <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white border-primary-500 text-primary-600">
+                          <Landmark
+                            className="h-8 w-8 md:h-10 md:w-10"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div className="bg-primary-500 text-white absolute -right-1 -bottom-1 rounded-full border-2 border-white p-1.5 shadow-md">
+                          <ShieldCheck className="h-4 w-4" aria-hidden="true" />
+                        </div>
                       </div>
-                      <div className="bg-primary-500 text-white absolute -right-1 -bottom-1 rounded-full border-2 border-white p-1.5 shadow-md">
-                        <ShieldCheck className="h-4 w-4" />
-                      </div>
-                    </div>
 
-                    <div className="min-w-0 flex-1 w-full">
-                      <p className="text-primary-600 text-[10px] font-bold tracking-widest uppercase mb-1.5">
-                        {mayor.office || 'Municipal Mayor'}
-                      </p>
-                      <h3 className="text-gray-900 text-lg md:text-xl leading-tight font-black mb-3">
-                        Hon. {toTitleCase(mayor.name)}
-                      </h3>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary-50 text-primary-700">
-                        Mayor
-                      </span>
-                    </div>
-                  </CardContent>
-                </Link>
-              </Card>
-            </motion.div>
-          )}
-          {viceMayor && (
-            <motion.div variants={itemVariants}>
-              <Card className="group h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <Link
-                  to="/government/elected-officials"
-                  className="inline-flex h-full w-full justify-center"
-                >
-                  <CardContent className="flex h-full flex-col items-center space-y-4 py-6 px-4 text-center">
-                    <div className="relative">
-                      <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white text-secondary-700 border-secondary-400">
-                        <Gavel className="h-8 w-8 md:h-10 md:w-10" />
+                      <div className="min-w-0 flex-1 w-full">
+                        <Text className="text-primary-600 text-[10px] font-bold tracking-widest uppercase mb-1.5">
+                          {mayor.office || 'Municipal Mayor'}
+                        </Text>
+                        <Heading
+                          level={4}
+                          className="text-gray-900 text-lg md:text-xl leading-tight font-black mb-3"
+                        >
+                          Hon. {toTitleCase(mayor.name)}
+                        </Heading>
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary-50 text-primary-700">
+                          Mayor
+                        </span>
                       </div>
-                    </div>
+                    </CardContent>
+                  </Link>
+                </Card>
+              </motion.div>
+            )}
+            {viceMayor && (
+              <motion.div variants={itemVariants}>
+                <Card className="group h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                  <Link
+                    to="/government/elected-officials"
+                    aria-label={`View Vice Mayor information - Hon. ${toTitleCase(viceMayor.name)}`}
+                    className="inline-flex h-full w-full justify-center"
+                  >
+                    <CardContent className="flex h-full flex-col items-center space-y-4 py-6 px-4 text-center">
+                      <div className="relative">
+                        <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white text-secondary-700 border-secondary-400">
+                          <Gavel
+                            className="h-8 w-8 md:h-10 md:w-10"
+                            aria-hidden="true"
+                          />
+                        </div>
+                      </div>
 
-                    <div className="min-w-0 flex-1 w-full">
-                      <p className="text-primary-600 text-[10px] font-bold tracking-widest uppercase mb-1.5">
-                        {viceMayor.office || 'Municipal Vice Mayor'}
-                      </p>
-                      <h3 className="text-gray-900 text-lg md:text-xl leading-tight font-black mb-3">
-                        Hon. {toTitleCase(viceMayor.name)}
-                      </h3>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary-100 text-secondary-700">
-                        Vice Mayor
-                      </span>
-                    </div>
-                  </CardContent>
-                </Link>
-              </Card>
-            </motion.div>
-          )}
-        </motion.div>
+                      <div className="min-w-0 flex-1 w-full">
+                        <Text className="text-primary-600 text-[10px] font-bold tracking-widest uppercase mb-1.5">
+                          {viceMayor.office || 'Municipal Vice Mayor'}
+                        </Text>
+                        <Heading
+                          level={4}
+                          className="text-gray-900 text-lg md:text-xl leading-tight font-black mb-3"
+                        >
+                          Hon. {toTitleCase(viceMayor.name)}
+                        </Heading>
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary-100 text-secondary-700">
+                          Vice Mayor
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Link>
+                </Card>
+              </motion.div>
+            )}
+          </motion.div>
+        </>
       )}
 
+      <Heading level={4} className="mb-6 mt-8">
+        Government Departments
+      </Heading>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         initial="hidden"
@@ -168,17 +190,24 @@ export default function GovernmentActivitySection({
             <Card hoverable className="border-t-4 border-primary-500">
               <Link
                 to={`/government/${category.slug}`}
+                aria-label={`View ${category.category} department`}
                 className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
               >
                 <CardContent className="flex flex-col h-full p-6">
                   <div className="flex gap-2">
-                    <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                    <div
+                      className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start"
+                      aria-hidden="true"
+                    >
                       {getIcon(category.icon)}
                     </div>
 
-                    <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                    <Heading
+                      level={5}
+                      className="text-lg font-semibold mb-4 text-gray-900 self-center"
+                    >
                       {category.category}
-                    </h3>
+                    </Heading>
                   </div>
                   <Text className="text-gray-800">{category.description}</Text>
                 </CardContent>
