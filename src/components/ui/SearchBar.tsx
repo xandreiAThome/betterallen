@@ -76,7 +76,7 @@ const SearchBar = ({
         }
 
         try {
-          const index = await loadCategoryIndex(category.slug);
+          const index = loadCategoryIndex(category.slug);
           for (const page of index.pages || []) {
             if (
               page.name.toLowerCase().includes(query) ||

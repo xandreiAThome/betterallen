@@ -6,25 +6,17 @@ import {
   serviceCategories,
   getCategorySubcategories,
   type Subcategory,
-  type CategoryIndex,
 } from '../data/yamlLoader';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import ServicesSection from '../components/home/ServicesSection';
 import SEO from '../components/SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
-import { useState, useEffect } from 'react';
 import { resolveLucideIcon } from '../lib/utils';
 import PageBanner from '@/components/ui/PageBanner';
 
 const Services: React.FC = () => {
   const { category } = useParams();
-  const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
-    layout: 'list',
-    pages: [],
-  });
-  const [loading, setLoading] = useState(false);
-  const subcategories: Subcategory[] = categoryIndex.pages;
 
   const getCategory = () => {
     return serviceCategories.categories.find(c => c.slug === category);
@@ -33,15 +25,8 @@ const Services: React.FC = () => {
   const categoryData = getCategory();
   const Icon = resolveLucideIcon(categoryData?.icon);
 
-  useEffect(() => {
-    if (category && categoryData) {
-      setLoading(true);
-      getCategorySubcategories(category)
-        .then(setCategoryIndex)
-        .catch(console.error)
-        .finally(() => setLoading(false));
-    }
-  }, [category, categoryData]);
+  const categoryIndex = getCategorySubcategories(category || '');
+  const subcategories: Subcategory[] = categoryIndex.pages;
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
@@ -103,93 +88,81 @@ const Services: React.FC = () => {
         <Heading>{categoryData.category || category}</Heading>
         <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
 
-        {loading ? (
-          <div
-            className="flex justify-center items-center p-8"
-            aria-live="polite"
-            aria-busy="true"
-          >
-            <Text>Loading services...</Text>
+        {categoryIndex.title && (
+          <Heading level={3}>{categoryIndex.title}</Heading>
+        )}
+        {categoryIndex.description && (
+          <Text className="text-gray-600 mb-4">
+            {categoryIndex.description}
+          </Text>
+        )}
+        {categoryIndex.layout === 'grid' ? (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {subcategories.map(subcategory => (
+              <Link
+                key={subcategory.slug}
+                to={`/services/${category}/${subcategory.slug}`}
+                aria-label={`${subcategory.name} - ${categoryData.category || category}`}
+              >
+                <Card
+                  hoverable
+                  className="h-full border-t-4 border-primary-500"
+                >
+                  <CardContent>
+                    <Heading
+                      level={5}
+                      className="text-lg font-medium text-gray-900"
+                    >
+                      {subcategory.name}
+                    </Heading>
+                    {subcategory.description && (
+                      <Text className="mt-2 text-sm text-gray-600">
+                        {subcategory.description}
+                      </Text>
+                    )}
+                    <span
+                      className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
+                      aria-label={`Category: ${categoryData.category || category}`}
+                    >
+                      {categoryData.category || category}
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         ) : (
-          <>
-            {categoryIndex.title && (
-              <Heading level={3}>{categoryIndex.title}</Heading>
-            )}
-            {categoryIndex.description && (
-              <Text className="text-gray-600 mb-4">
-                {categoryIndex.description}
-              </Text>
-            )}
-            {categoryIndex.layout === 'grid' ? (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
-                    aria-label={`${subcategory.name} - ${categoryData.category || category}`}
-                  >
-                    <Card
-                      hoverable
-                      className="h-full border-t-4 border-primary-500"
+          <div className="space-y-4">
+            {subcategories.map(subcategory => (
+              <Link
+                key={subcategory.slug}
+                to={`/services/${category}/${subcategory.slug}`}
+                aria-label={`${subcategory.name} - ${categoryData.category || category}`}
+              >
+                <Card hoverable className="mb-4">
+                  <CardContent>
+                    <Heading
+                      level={5}
+                      className="text-lg font-medium text-gray-900"
                     >
-                      <CardContent>
-                        <Heading
-                          level={5}
-                          className="text-lg font-medium text-gray-900"
-                        >
-                          {subcategory.name}
-                        </Heading>
-                        {subcategory.description && (
-                          <Text className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </Text>
-                        )}
-                        <span
-                          className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
-                          aria-label={`Category: ${categoryData.category || category}`}
-                        >
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
-                    aria-label={`${subcategory.name} - ${categoryData.category || category}`}
-                  >
-                    <Card hoverable className="mb-4">
-                      <CardContent>
-                        <Heading
-                          level={5}
-                          className="text-lg font-medium text-gray-900"
-                        >
-                          {subcategory.name}
-                        </Heading>
-                        {subcategory.description && (
-                          <Text size="sm" className="mt-2 text-gray-600">
-                            {subcategory.description}
-                          </Text>
-                        )}
-                        <span
-                          className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
-                          aria-label={`Category: ${categoryData.category || category}`}
-                        >
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </>
+                      {subcategory.name}
+                    </Heading>
+                    {subcategory.description && (
+                      <Text size="sm" className="mt-2 text-gray-600">
+                        {subcategory.description}
+                      </Text>
+                    )}
+                    <span
+                      className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
+                      aria-label={`Category: ${categoryData.category || category}`}
+                    >
+                      {categoryData.category || category}
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
         )}
       </Section>
     </>

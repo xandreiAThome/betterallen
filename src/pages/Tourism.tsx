@@ -6,7 +6,6 @@ import {
   tourismCategories,
   getTourismPlaces,
   getFeaturedPlaces,
-  type Place,
 } from '../data/tourismLoader';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import SEO from '../components/SEO';
@@ -23,8 +22,6 @@ const heroImages = getFeaturedPlaces().map(p => p.image);
 
 const Tourism: React.FC = () => {
   const { category } = useParams();
-  const [places, setPlaces] = useState<Place[]>([]);
-  const [loading, setLoading] = useState(false);
   const [heroIndex, setHeroIndex] = useState(0);
 
   useEffect(() => {
@@ -43,15 +40,7 @@ const Tourism: React.FC = () => {
   const categoryData = getCategory();
   const Icon = resolveLucideIcon(categoryData?.icon);
 
-  useEffect(() => {
-    if (category && categoryData) {
-      setLoading(true);
-      getTourismPlaces(category)
-        .then(setPlaces)
-        .catch(console.error)
-        .finally(() => setLoading(false));
-    }
-  }, [category, categoryData]);
+  const places = category && categoryData ? getTourismPlaces(category) : [];
 
   if (!category) {
     return (
@@ -220,11 +209,7 @@ const Tourism: React.FC = () => {
         <Heading level={3}>{categoryData.category}</Heading>
         <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
 
-        {loading ? (
-          <div className="flex justify-center items-center p-8">
-            <Text>Loading places...</Text>
-          </div>
-        ) : places.length === 0 ? (
+        {places.length === 0 ? (
           <Text className="text-gray-500 text-center py-8">
             No places listed for this category yet.
           </Text>
