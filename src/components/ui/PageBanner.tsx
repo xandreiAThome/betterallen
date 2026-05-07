@@ -1,6 +1,6 @@
+import { type ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
 import { Heading } from './Heading';
-import SearchBar from './SearchBar';
 import { Text } from './Text';
 
 interface BreadcrumbItem {
@@ -13,7 +13,7 @@ interface PageBannerProps {
   title: string;
   description: string;
   className?: string;
-  hideSearch?: boolean;
+  search?: ReactNode;
 }
 
 const PageBanner = ({
@@ -21,7 +21,7 @@ const PageBanner = ({
   title,
   description,
   className = '',
-  hideSearch = false,
+  search,
 }: PageBannerProps) => {
   return (
     <div
@@ -42,13 +42,8 @@ const PageBanner = ({
           <Text className="mx-auto mt-2 max-w-lg text-sm leading-6 text-primary-100 sm:text-base">
             {description}
           </Text>
-          {!hideSearch && (
-            <div className="mx-auto mt-7 w-full max-w-xl">
-              <SearchBar
-                variant="pill"
-                placeholder="Search services (e.g., birth certificate, business permit)"
-              />
-            </div>
+          {search && (
+            <div className="mx-auto mt-7 w-full max-w-xl">{search}</div>
           )}
         </div>
       </div>
