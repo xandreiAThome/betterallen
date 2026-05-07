@@ -91,14 +91,24 @@ const Services: React.FC = () => {
         description={categoryData.description}
         keywords={`${categoryData.category}, government services, public services, local government`}
       />
-      <Section className="p-3 mb-12">
+      <Section
+        className="p-3 mb-12"
+        aria-label={`${categoryData.category || category} services`}
+      >
         <Breadcrumbs className="mb-8" />
-        <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
+        <Icon
+          className="h-8 w-8 mb-4 text-primary-600 rounded-md"
+          aria-hidden="true"
+        />
         <Heading>{categoryData.category || category}</Heading>
         <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
 
         {loading ? (
-          <div className="flex justify-center items-center p-8">
+          <div
+            className="flex justify-center items-center p-8"
+            aria-live="polite"
+            aria-busy="true"
+          >
             <Text>Loading services...</Text>
           </div>
         ) : (
@@ -117,21 +127,28 @@ const Services: React.FC = () => {
                   <Link
                     key={subcategory.slug}
                     to={`/services/${category}/${subcategory.slug}`}
+                    aria-label={`${subcategory.name} - ${categoryData.category || category}`}
                   >
                     <Card
                       hoverable
                       className="h-full border-t-4 border-primary-500"
                     >
                       <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
+                        <Heading
+                          level={5}
+                          className="text-lg font-medium text-gray-900"
+                        >
                           {subcategory.name}
-                        </h4>
+                        </Heading>
                         {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
+                          <Text className="mt-2 text-sm text-gray-600">
                             {subcategory.description}
-                          </p>
+                          </Text>
                         )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
+                        <span
+                          className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
+                          aria-label={`Category: ${categoryData.category || category}`}
+                        >
                           {categoryData.category || category}
                         </span>
                       </CardContent>
@@ -145,18 +162,25 @@ const Services: React.FC = () => {
                   <Link
                     key={subcategory.slug}
                     to={`/services/${category}/${subcategory.slug}`}
+                    aria-label={`${subcategory.name} - ${categoryData.category || category}`}
                   >
                     <Card hoverable className="mb-4">
                       <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
+                        <Heading
+                          level={5}
+                          className="text-lg font-medium text-gray-900"
+                        >
                           {subcategory.name}
-                        </h4>
+                        </Heading>
                         {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
+                          <Text size="sm" className="mt-2 text-gray-600">
                             {subcategory.description}
-                          </p>
+                          </Text>
                         )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
+                        <span
+                          className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800"
+                          aria-label={`Category: ${categoryData.category || category}`}
+                        >
                           {categoryData.category || category}
                         </span>
                       </CardContent>

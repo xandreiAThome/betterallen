@@ -81,9 +81,16 @@ export default function ServicesSection({
             <div className="ml-auto">
               <Link
                 to="/services"
-                className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
+                aria-label="View all services"
+                className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors group"
               >
-                View All →
+                View All{' '}
+                <span
+                  aria-hidden="true"
+                  className="ml-1 transition-transform group-hover:translate-x-1"
+                >
+                  →
+                </span>
               </Link>
             </div>
           )}
@@ -107,19 +114,26 @@ export default function ServicesSection({
               <Card hoverable className="border-t-4 border-primary-500">
                 <Link
                   to={`/services/${category.slug}`}
+                  aria-label={`View ${t(`services.${category.slug}.category`, { defaultValue: category.category })}`}
                   className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
                 >
                   <CardContent className="flex flex-col h-full p-6">
                     <div className="flex gap-2">
-                      <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                      <div
+                        className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start"
+                        aria-hidden="true"
+                      >
                         {getIcon(category.icon)}
                       </div>
 
-                      <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                      <Heading
+                        level={5}
+                        className="text-lg font-semibold mb-4 text-gray-900 self-center"
+                      >
                         {t(`services.${category.slug}.category`, {
                           defaultValue: category.category,
                         })}
-                      </h3>
+                      </Heading>
                     </div>
                     <Text className="text-gray-800">
                       {category.description}
