@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev:host": "vite --host",
-    "build": "tsc -b && vite build",
+    "build": "npm run generate-sitemap && tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -15,7 +15,8 @@
     "prepare": "husky",
     "convert-yaml": "node scripts/yaml-to-json.js",
     "dev:yaml": "npm run convert-yaml && npm run dev",
-    "setup": "node scripts/setup-starter-kit.js"
+    "setup": "node scripts/setup-starter-kit.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
