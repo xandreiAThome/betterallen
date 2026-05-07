@@ -132,7 +132,7 @@ export default function GovernmentActivitySection({
                 >
                   <CardContent className="flex h-full flex-col items-center space-y-4 py-6 px-4 text-center">
                     <div className="relative">
-                      <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white text-gray-400 border-orange-400">
+                      <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm bg-white text-secondary-700 border-secondary-400">
                         <Gavel className="h-8 w-8 md:h-10 md:w-10" />
                       </div>
                     </div>
@@ -144,7 +144,7 @@ export default function GovernmentActivitySection({
                       <h3 className="text-gray-900 text-lg md:text-xl leading-tight font-black mb-3">
                         Hon. {toTitleCase(viceMayor.name)}
                       </h3>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gray-100 text-gray-700">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary-100 text-secondary-700">
                         Vice Mayor
                       </span>
                     </div>

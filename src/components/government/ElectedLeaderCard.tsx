@@ -21,7 +21,7 @@ export default function ElectedLeaderCard({
             className={`flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full border-4 shadow-sm ${
               isMayor
                 ? 'bg-white border-primary-500 text-primary-600'
-                : 'bg-white text-gray-700 border-secondary-400'
+                : 'bg-white text-secondary-700 border-secondary-400'
             }`}
           >
             <Icon className="h-8 w-8 md:h-10 md:w-10" />
@@ -45,7 +45,7 @@ export default function ElectedLeaderCard({
             className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${
               isMayor
                 ? 'bg-primary-50 text-primary-700'
-                : 'bg-gray-100 text-gray-700'
+                : 'bg-secondary-100 text-secondary-700'
             }`}
           >
             {leader.role}

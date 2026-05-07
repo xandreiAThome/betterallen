@@ -73,7 +73,7 @@ const Tourism: React.FC = () => {
             />
           ))}
           <div className="absolute inset-0 bg-primary-900/65" />
-          <div className="relative z-10 max-w-full mx-auto sm:px-6 px-4">
+          <div className="relative z-10 max-w-384 mx-auto sm:px-6 px-4">
             <Heading
               level={5}
               className="text-primary-200 inline-flex items-center gap-2 uppercase tracking-wide font-medium -mb-6"

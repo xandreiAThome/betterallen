@@ -153,7 +153,7 @@ const Government: React.FC = () => {
                 className={classNames(
                   'group relative flex flex-col rounded-2xl border-2 p-3 overflow-hidden',
                   // Horizontal expand/collapse via flex-grow
-                  'transition-[flex-grow,background-color,border-color,box-shadow] duration-[400ms] ease-in-out',
+                  'transition-[flex-grow,background-color,border-color,box-shadow] duration-400 ease-in-out',
                   isActive
                     ? 'flex-1 bg-primary-100 border-primary-500 shadow-lg'
                     : 'flex-[0_0_2.75rem] border-gray-200 bg-white shadow-sm hover:border-primary-400 hover:bg-primary-50/60'
