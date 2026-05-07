@@ -42,7 +42,7 @@ export default function ElectedOfficials() {
       {/* ── SECTION 1: EXECUTIVE BRANCH ── */}
       <section>
         <div className="flex items-center gap-3 border-b border-gray-100 pb-4 mb-5">
-          <Landmark className="h-4 w-4 text-blue-500 shrink-0" />
+          <Landmark className="h-4 w-4 text-primary-500 shrink-0" />
           <p className="text-gray-500 text-[10px] font-bold tracking-widest uppercase">
             Executive Branch
           </p>
@@ -66,7 +66,7 @@ export default function ElectedOfficials() {
       {legislativeList.length > 0 && (
         <section>
           <div className="flex items-center gap-3 mb-5 border-b border-gray-100 pb-4">
-            <UsersIcon className="h-4 w-4 text-blue-500 shrink-0" />
+            <UsersIcon className="h-4 w-4 text-primary-500 shrink-0" />
             <p className="text-gray-500 text-[10px] font-bold tracking-widest uppercase">
               Sangguniang Bayan
             </p>
@@ -111,7 +111,7 @@ export default function ElectedOfficials() {
       {/* ── SECTION 3: DEPARTMENTS BRIDGE ── */}
       <div className="border border-gray-200 bg-linear-to-br from-gray-50 to-white flex flex-col gap-4 rounded-2xl p-4 md:p-6 md:flex-row md:items-center md:justify-between shadow-sm">
         <div className="flex items-start gap-3 md:gap-4">
-          <div className="bg-blue-50 text-blue-600 p-2.5 md:p-3 rounded-xl border border-blue-100 shrink-0">
+          <div className="bg-blue-50 text-primary-600 p-2.5 md:p-3 rounded-xl border border-primary-100 shrink-0">
             <Briefcase className="h-5 w-5 md:h-6 md:w-6" />
           </div>
           <div>
