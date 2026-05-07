@@ -8,12 +8,6 @@ import PageBanner from '@/components/ui/PageBanner';
 
 const data = aboutBetterGovData;
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'BetterGov', href: '/about/bettergov' },
-];
-
 const AboutBetterGov: React.FC = () => {
   return (
     <>
@@ -24,7 +18,6 @@ const AboutBetterGov: React.FC = () => {
       />
 
       <PageBanner
-        breadcrumbs={breadcrumbs}
         title={data.name}
         description="Learn about the volunteer initiative making local government information accessible to every Filipino."
       />

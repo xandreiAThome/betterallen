@@ -44,10 +44,6 @@ const Services: React.FC = () => {
     }
   }, [category, categoryData]);
 
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-  ];
   if (!category) {
     return (
       <>
@@ -58,7 +54,6 @@ const Services: React.FC = () => {
         />
 
         <PageBanner
-          breadcrumbs={breadcrumbs}
           title="Local Government Services"
           description="Explore official municipal services from the Citizens Charter."
           search={

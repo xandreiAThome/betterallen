@@ -8,12 +8,6 @@ import PageBanner from '@/components/ui/PageBanner';
 
 const data = aboutAllenData;
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Allen', href: '/about/allen' },
-];
-
 const AboutAllen: React.FC = () => {
   return (
     <>
@@ -24,7 +18,6 @@ const AboutAllen: React.FC = () => {
       />
 
       <PageBanner
-        breadcrumbs={breadcrumbs}
         title={`${data.name}, ${data.province}`}
         description="Learn about the history, geography, and community of Allen."
       />

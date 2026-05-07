@@ -33,12 +33,6 @@ const branches = [
   },
 ];
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Allen', href: '/about/allen' },
-];
-
 const Government: React.FC = () => {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -63,7 +57,6 @@ const Government: React.FC = () => {
       />
 
       <PageBanner
-        breadcrumbs={breadcrumbs}
         title="Government"
         description={`Access information on elected leaders, municipal departments, and component barangays.`}
       />
