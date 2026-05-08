@@ -5,6 +5,7 @@ places:
     barangay: 'Cabacungan'
     category: 'Beaches & Resorts'
     categoryColor: 'bg-sky-100 text-sky-700'
+    preview: true
     image: '/images/caba.jpg'
     mapsUrl: 'https://maps.app.goo.gl/pq4zygcsmtvFeb98A'
   # Birmingham as resort than lodging
