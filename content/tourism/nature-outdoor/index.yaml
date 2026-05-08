@@ -19,3 +19,14 @@ places:
     image: '/images/tarangban-peak.jpg'
     featured: true
     preview: true
+
+  - name: 'Kinaguitman Falls'
+    slug: 'kinaguitman-falls'
+    description: 'A modest waterfall surrounded by rocks, greenery, and a countryside atmosphere'
+    barangay: 'Kinaguitman'
+    category: 'Nature & Outdoor'
+    categoryColor: 'bg-emerald-100 text-emerald-700'
+    mapsUrl: 'https://maps.app.goo.gl/Z3PYeaCHfsMsN23K7'
+    socialUrl: 'https://www.facebook.com/profile.php?id=100065517848300'
+    image: '/images/kinaguitman-falls.jpg'
+    featured: true
