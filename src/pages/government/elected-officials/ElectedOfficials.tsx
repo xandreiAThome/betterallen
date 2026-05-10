@@ -17,6 +17,7 @@ import {
 } from '../../../data/yamlLoader';
 import ElectedLeaderCard from '../../../components/government/ElectedLeaderCard';
 import CouncilMemberCard from '../../../components/government/CouncilMemberCard';
+import Section from '@/components/ui/Section';
 
 type CouncilMember = LegislativeOfficial;
 
@@ -32,16 +33,16 @@ export default function ElectedOfficials() {
         description="Meet the elected officials of the municipality."
       />
 
-      {/* Hero */}
-      <div className="text-center">
-        <Heading level={2}>Elected Officials</Heading>
-        <Text size="sm" className="text-gray-600 mt-2 mx-auto">
-          The elected leaders and legislative body of the Municipal Government.
-        </Text>
-      </div>
+      <Section aria-label="Executive Branch">
+        <div className="text-center">
+          <Heading level={2}>Elected Officials</Heading>
+          <Text size="sm" className="text-gray-600 mt-2 mx-auto">
+            The elected leaders and legislative body of the Municipal
+            Government.
+          </Text>
+        </div>
 
-      {/* ── SECTION 1: EXECUTIVE BRANCH ── */}
-      <section aria-label="Executive Branch">
+        {/* ── SECTION 1: EXECUTIVE BRANCH ── */}
         <div className="flex items-center gap-3 border-b border-gray-100 pb-4 mb-5">
           <Landmark
             className="h-4 w-4 text-primary-500 shrink-0"
@@ -67,12 +68,12 @@ export default function ElectedOfficials() {
             />
           ))}
         </div>
-      </section>
+      </Section>
 
       {/* ── SECTION 2: LEGISLATIVE BRANCH ── */}
       {legislativeList.length > 0 && (
         <section aria-label="Sangguniang Bayan - Legislative Branch">
-          <div className="flex items-center gap-3 mb-5 border-b border-gray-100 pb-4">
+          <div className="flex items-center gap-3 mb-5 border-yellow border-gray-100 pb-4">
             <UsersIcon
               className="h-4 w-4 text-primary-500 shrink-0"
               aria-hidden="true"

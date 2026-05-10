@@ -79,7 +79,7 @@ const AboutSection: React.FC = () => {
         >
           {/* Allen Card */}
           <motion.div variants={itemVariants} className="h-full">
-            <Card className="h-full bg-white border-gray-200 hover:border-primary-300 hover:-translate-y-2 transition-all duration-200">
+            <Card className="h-full bg-white border-gray-200 hover:border-primary-200 hover:-translate-y-2 transition-all duration-200">
               <CardContent className="flex flex-col justify-between h-full p-8">
                 <div>
                   <div
@@ -108,7 +108,7 @@ const AboutSection: React.FC = () => {
 
           {/* BetterGov Card */}
           <motion.div variants={itemVariants} className="h-full">
-            <Card className="h-full bg-primary-600 border-primary-700 hover:bg-primary-500 hover:-translate-y-2 transition-all duration-200">
+            <Card className="h-full bg-primary-600 hover:bg-primary-500 hover:-translate-y-2 transition-all duration-200">
               <CardContent className="flex flex-col justify-between h-full p-8">
                 <div>
                   <div
