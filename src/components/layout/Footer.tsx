@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/betterallen_navbar_white_text.png"
+                src="/betterallen_navbar_white_text.webp"
                 alt="BetterAllen logo"
                 className="h-12 w-auto mr-3"
               />
@@ -99,12 +99,12 @@ const Footer: React.FC = () => {
                 Contribute at GitHub
                 <ExternalLink size={12} className="text-gray-600" />
               </Link>
-              <Link
-                to="/sitemap.xml"
+              <a
+                href="/sitemap.xml"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
                 Sitemap
-              </Link>
+              </a>
             </div>
           </div>
         </div>

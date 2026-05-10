@@ -2,7 +2,7 @@ import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Link } from 'react-router-dom';
-import { tourismCategories, getFeaturedPlaces } from '../../data/tourismLoader';
+import { tourismCategories, getPreviewPlaces } from '../../data/tourismLoader';
 import type { Place } from '../../data/tourismLoader';
 import { MapPin } from 'lucide-react';
 import TourismCard from '../ui/TourismCard';
@@ -41,14 +41,14 @@ type PreviewPlace = Place & {
 };
 
 export default function TourismPreviewSection() {
-  const featuredPlaces = getFeaturedPlaces()
+  const previewedPlaces = getPreviewPlaces()
     .slice(0, PREVIEW_COUNT)
     .map(place => ({
       ...place,
       categoryColor: place.categoryColor ?? 'bg-primary-100 text-primary-700',
     })) as PreviewPlace[];
 
-  if (featuredPlaces.length === 0) {
+  if (previewedPlaces.length === 0) {
     return null;
   }
 
@@ -133,10 +133,11 @@ export default function TourismPreviewSection() {
             </Carousel>
           </motion.div>
         )}
-
-        <Heading level={4} className="mb-6 mt-12">
-          Popular Spots in Allen
-        </Heading>
+        <motion.div initial="hidden" whileInView="show" variants={itemVariants}>
+          <Heading level={4} className="mb-6 mt-12">
+            Popular Spots in Allen
+          </Heading>
+        </motion.div>
 
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -145,7 +146,8 @@ export default function TourismPreviewSection() {
           viewport={{ once: true }}
           variants={listVariants}
         >
-          {featuredPlaces.map(place => (
+          {' '}
+          {previewedPlaces.map(place => (
             <motion.div
               key={place.slug}
               variants={itemVariants}
@@ -169,7 +171,7 @@ export default function TourismPreviewSection() {
 
         <div className="mt-8 text-center">
           <Link
-            to="/contact"
+            to="/tourism"
             aria-label="View all contact information"
             className="inline-flex items-center text-primary-600 hover:text-primary-700 transition-all font-medium group"
           >

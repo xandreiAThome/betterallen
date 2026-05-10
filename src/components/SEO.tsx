@@ -19,10 +19,10 @@ export default function SEO({
   type = 'website',
   siteName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government Website',
 }: SEOProps) {
-  const defaultTitle = `${siteName} - Official Government Website`;
+  const defaultTitle = `${siteName} - Community Information Portal`;
   const defaultDescription =
     import.meta.env.VITE_SITE_DESCRIPTION ||
-    `Official website of ${siteName}. Access government services, information, and resources.`;
+    `Community-driven portal for ${siteName}. Access government services, information, and resources.`;
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
@@ -30,9 +30,14 @@ export default function SEO({
   const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
-  const fullUrl = url || import.meta.env.VITE_WEBSITE_URL || '';
+  const fullUrl =
+    url || window.location.href || import.meta.env.VITE_WEBSITE_URL || '';
+  const origin =
+    typeof window !== 'undefined'
+      ? window.location.origin
+      : import.meta.env.VITE_WEBSITE_URL || 'https://betterallen.org';
   const fullImage =
-    image || import.meta.env.VITE_OG_IMAGE_URL || `${fullUrl}/og-image.jpg`;
+    image || import.meta.env.VITE_OG_IMAGE_URL || `${origin}/og-image.png`;
   const twitterHandle = import.meta.env.VITE_TWITTER_HANDLE || '';
 
   return (
@@ -54,6 +59,11 @@ export default function SEO({
       <meta property="og:image" content={fullImage} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:locale" content="en_US" />
+
+      {/* Secure image URL for Facebook */}
+      {fullImage && <meta property="og:image:secure_url" content={fullImage} />}
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
