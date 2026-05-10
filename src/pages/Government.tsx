@@ -7,6 +7,7 @@ import ElectedOfficialsNav from '../components/government/ElectedOfficialsNav';
 import PageBanner from '@/components/ui/PageBanner';
 import { Heading } from '@/components/ui/Heading';
 import { Text } from '@/components/ui/Text';
+import GovernmentNav from '@/components/government/GovernmentNav';
 
 const branches = [
   {
@@ -66,6 +67,7 @@ const Government: React.FC = () => {
         className="p-3 mb-12"
         aria-label="Government information sections"
       >
+        <GovernmentNav />
         {/* ── Mobile horizontal accordion (< md) ── */}
         {/*
           Layout: a flex row where the active tab expands (flex-1) and

@@ -44,7 +44,7 @@ export default function GovernmentActivitySection({
   );
 
   return (
-    <Section id="government">
+    <Section>
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -56,7 +56,7 @@ export default function GovernmentActivitySection({
           {description || t('governmentActivity.description')}
         </Text>{' '}
         <Heading level={4} className="mb-6 mt-8">
-          Elected Officials
+          Local Chief Executives
         </Heading>
       </motion.div>
 
