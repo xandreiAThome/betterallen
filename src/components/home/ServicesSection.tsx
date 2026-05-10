@@ -45,8 +45,6 @@ interface Category {
 }
 
 export default function ServicesSection({
-  title,
-  description,
   preview,
 }: {
   title?: string;
@@ -76,10 +74,12 @@ export default function ServicesSection({
         transition={{ duration: 0.8, ease: 'easeOut' as const }}
       >
         <div className="text-center">
+          {/* Comment out heading and text temporarily
           <Heading level={2}>{title || t('services.title')}</Heading>
           <Text size="sm" className="text-gray-600 mt-2 mb-8 mx-auto">
             {description}
           </Text>
+          */}
 
           {preview && (
             <div className="ml-auto">

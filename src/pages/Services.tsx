@@ -39,10 +39,11 @@ const Services: React.FC = () => {
         />
 
         <PageBanner
-          title="Services"
-          description="Explore official municipal services from the Citizens Charter."
+          title="Local Government Services"
+          description={`All services provided by the LGU of ${import.meta.env.VITE_GOVERNMENT_NAME}. Find what you need for citizenship, business, education, and more.`}
           search={
             <SearchBar
+              className="mx-auto w-lg max-w-inherit max-h-inherit"
               variant="pill"
               placeholder="Search services (e.g., birth certificate, business permit)"
             />
@@ -50,8 +51,10 @@ const Services: React.FC = () => {
         />
 
         <ServicesSection
+          /*
           title={`Local Government Services`}
           description={`All services provided by the LGU of ${import.meta.env.VITE_GOVERNMENT_NAME}. Find what you need for citizenship, business, education, and more.`}
+          */
           preview={false}
         />
       </>
