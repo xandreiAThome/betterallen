@@ -17,7 +17,6 @@ import {
 } from '../../../data/yamlLoader';
 import ElectedLeaderCard from '../../../components/government/ElectedLeaderCard';
 import CouncilMemberCard from '../../../components/government/CouncilMemberCard';
-import Section from '@/components/ui/Section';
 
 type CouncilMember = LegislativeOfficial;
 
@@ -33,7 +32,7 @@ export default function ElectedOfficials() {
         description="Meet the elected officials of the municipality."
       />
 
-      <Section aria-label="Executive Branch">
+      <section aria-label="Executive Branch">
         <div className="text-center">
           <Heading level={2}>Elected Officials</Heading>
           <Text size="sm" className="text-gray-600 mt-2 mx-auto">
@@ -68,7 +67,7 @@ export default function ElectedOfficials() {
             />
           ))}
         </div>
-      </Section>
+      </section>
 
       {/* ── SECTION 2: LEGISLATIVE BRANCH ── */}
       {legislativeList.length > 0 && (
