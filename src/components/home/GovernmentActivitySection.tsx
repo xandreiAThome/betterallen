@@ -153,7 +153,7 @@ export default function GovernmentActivitySection({
       <Heading level={4} className="mb-6 mt-8">
         Government Departments
       </Heading>
-      <GovernmentNav />
+      <GovernmentNav variant="homepage" />
     </Section>
   );
 }
