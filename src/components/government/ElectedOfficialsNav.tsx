@@ -20,7 +20,7 @@ export default function ElectedOfficialsNav() {
   const currentPath = location.pathname;
 
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-4 mt-12 shadow-sm w-fit mx-auto">
+    <div className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-4  shadow-sm w-fit mx-auto">
       <div>
         <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">
           Municipal Government

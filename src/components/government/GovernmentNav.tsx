@@ -56,7 +56,7 @@ const GovernmentNav: React.FC<GovernmentNavProps> = ({
               className={classNames(
                 'group relative flex min-h-40 flex-col justify-between rounded-2xl border p-4 transition-all duration-300',
                 isActive
-                  ? 'border-primary-500 shadow-sm text-primary-900'
+                  ? 'bg-primary-100 border-primary-200 shadow-sm text-primary-900'
                   : 'hover:border-primary-200 border-gray-200 bg-white text-gray-900 shadow-sm hover:shadow-sm'
               )}
               state={{ scrollToContent: true }}
@@ -67,7 +67,7 @@ const GovernmentNav: React.FC<GovernmentNavProps> = ({
                     className={classNames(
                       'rounded-xl p-2.5 shadow-sm transition-colors',
                       isActive
-                        ? 'bg-white/20 text-primary-900'
+                        ? 'bg-white/20 text-primary-600'
                         : 'bg-primary-50 text-primary-600 border-primary-500'
                     )}
                     aria-hidden="true"

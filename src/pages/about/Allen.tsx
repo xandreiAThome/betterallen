@@ -21,7 +21,7 @@ const AboutAllen: React.FC = () => {
       <PageBanner
         title={`${data.name}, ${data.province}`}
         description="Allen is a coastal municipality in Northern Samar — the southern gateway between Luzon and the Visayas, where the San Bernardino Strait narrows and every journey south begins."
-        titleSize="6xl"
+        titleSize="4xl"
       />
 
       <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">

@@ -78,16 +78,19 @@ export default function MunicipalCommitteesPage() {
     : committees;
 
   return (
-    <main className="p-4 md:p-6" aria-label="Municipal committees directory">
+    <main
+      className="p-4 md:p-6 md:space-y-12 max-w-7xl mx-auto"
+      aria-label="Municipal committees directory"
+    >
       <SEO
         title="Municipal Committees"
         description="Active standing committees of the Sangguniang Bayan, including chairpersons and member assignments."
         keywords="municipal committees, sangguniang bayan, local legislation, committee assignments"
       />
       {/* Header */}
-      <div className="text-center mb-6 md:mb-8">
+      <div className="text-center mb-6">
         <Heading level={2}>Committees</Heading>
-        <Text size="sm" className="text-gray-500 mt-2 mx-auto">
+        <Text size="sm" className="text-gray-600 mt-2 mx-auto">
           Active committees of the Sangguniang Bayan.
         </Text>
       </div>
