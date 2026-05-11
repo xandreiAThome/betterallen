@@ -34,7 +34,7 @@ const ContactPreviewSection = () => {
       aria-label="Contact information"
     >
       <motion.div
-        className="flex flex-col items-center justify-between mb-10 md:flex-row"
+        className="flex flex-col justify-between mb-10 md:flex-row"
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
