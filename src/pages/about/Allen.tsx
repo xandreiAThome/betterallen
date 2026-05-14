@@ -21,14 +21,14 @@ const AboutAllen: React.FC = () => {
       <PageBanner
         title={`${data.name}, ${data.province}`}
         description="Allen is a coastal municipality in Northern Samar — the southern gateway between Luzon and the Visayas, where the San Bernardino Strait narrows and every journey south begins."
-        titleSize="6xl"
+        titleSize="4xl"
       />
 
-      <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">
+      <Section className="mt-6 mb-6 sm:px-10 lg:px-20 xl:px-30">
         {/* Key Statistics */}
-        <div className="mb-5">
+        <div className="mb-6">
           <div
-            className="grid grid-cols-2 gap-4 p-2 sm:flex sm:flex-row sm:justify-center"
+            className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:justify-center"
             role="region"
             aria-label="Key statistics about Allen"
           >
@@ -97,7 +97,7 @@ const AboutAllen: React.FC = () => {
         </div>
 
         {/* Geography */}
-        <div className="mb-12">
+        <div>
           <Heading level={2}>Geography</Heading>
 
           <div className="mt-6">

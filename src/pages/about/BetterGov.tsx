@@ -5,6 +5,8 @@ import { Text } from '../../components/ui/Text';
 import { resolveLucideIcon } from '../../lib/utils';
 import { aboutBetterGovData } from '../../data/yamlLoader';
 import PageBanner from '@/components/ui/PageBanner';
+import { FaFacebook } from 'react-icons/fa';
+import { CgWebsite } from 'react-icons/cg';
 
 const data = aboutBetterGovData;
 
@@ -22,7 +24,7 @@ const AboutBetterGov: React.FC = () => {
         description="Learn about the volunteer initiative making local government information accessible to every Filipino."
       />
 
-      <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">
+      <Section className="mt-6 mb-6 sm:px-10 lg:px-20 xl:px-30">
         {/* Mission — primary blue */}
         <div className="mb-12">
           <Heading level={2}>Our Mission</Heading>
@@ -115,6 +117,60 @@ const AboutBetterGov: React.FC = () => {
 
         {/* Get Involved — email and GitHub cards */}
         <div className="mb-12">
+          <Heading level={2}>Our Work</Heading>
+          <Text className="mt-2 mb-8 leading-relaxed text-gray-600 max-w-none">
+            Stay updated on our progress and engage with the BetterGov
+            community.
+          </Text>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <a
+              href="https://www.facebook.com/bettergovph"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center gap-5 p-6 text-white transition-colors bg-primary-600 rounded-2xl hover:bg-primary-500"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 shrink-0">
+                <FaFacebook className="text-2xl" aria-hidden="true" />
+              </div>
+
+              <div className="text-left">
+                <Text className="font-semibold text-white max-w-none">
+                  Facebook
+                </Text>
+                <Text className="text-xs text-primary-100 max-w-none">
+                  Follow us for updates, announcements, and community
+                  discussions.
+                </Text>
+              </div>
+            </a>
+
+            <a
+              href="https://bettergov.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center gap-5 p-6 transition-all bg-white border border-primary-200 rounded-2xl hover:border-primary-400 hover:shadow-md"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-50 shrink-0">
+                <CgWebsite
+                  aria-hidden="true"
+                  className="text-2xl text-primary-600"
+                />
+              </div>
+              <div className="text-left">
+                <Text className="font-semibold text-primary-800 max-w-none">
+                  Website
+                </Text>
+                <Text className="text-xs text-gray-500 max-w-none">
+                  Visit our main website to learn more about BetterGov and our
+                  initiatives.
+                </Text>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        {/* Get Involved — email and GitHub cards */}
+        <div>
           <Heading level={2}>Get Involved</Heading>
           <Text className="mt-2 mb-8 leading-relaxed text-gray-600 max-w-none">
             BetterGov is open to anyone who believes Filipinos deserve better
@@ -152,7 +208,7 @@ const AboutBetterGov: React.FC = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/bettergovph/bettergov/issues/new"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center gap-5 p-6 transition-all bg-white border border-primary-200 rounded-2xl hover:border-primary-400 hover:shadow-md"

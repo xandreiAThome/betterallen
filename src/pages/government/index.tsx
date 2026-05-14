@@ -1,5 +1,5 @@
 import { Outlet, useLocation, Navigate } from 'react-router-dom';
-import SEO from '../../components/SEO';
+import { getBannerConfig } from '@/data/govBannerConfig';
 import Section from '../../components/ui/Section';
 import ElectedOfficialsNav from '../../components/gov-components/ElectedOfficialsNav';
 import PageBanner from '@/components/ui/PageBanner';
@@ -17,25 +17,24 @@ const Government: React.FC = () => {
     return <Navigate to="/government/elected-officials" replace />;
   }
 
-  // Fallback for the environment variable to prevent TS errors if it's undefined
-  const govName = import.meta.env.VITE_GOVERNMENT_NAME || 'our municipality';
+  // Extract route key from path (e.g., /government/elected-officials → elected-officials, /government/elected-officials/committees → elected-officials/committees)
+  const pathAfterGovernment =
+    currentPath.split('/government/')[1] || 'elected-officials';
+  const bannerConfig = getBannerConfig(pathAfterGovernment);
 
   return (
     <>
-      <SEO
-        title="Government"
-        description={`Access information on elected leaders, municipal departments, and the component barangays of ${govName}.`}
-        keywords="government, elected officials, municipal offices, barangays, local government"
-      />
+      {/* Let child page handles its own SEO */}
+      {/* Dynamic banner config for all govt subroutes */}
+      {bannerConfig && (
+        <PageBanner
+          title={bannerConfig.title}
+          description={bannerConfig.description}
+          titleSize={bannerConfig.titleSize}
+        />
+      )}
 
-      <PageBanner
-        title="Government"
-        description="Access information on elected leaders, municipal departments, and the component barangays of Allen."
-      />
-      <Section
-        className="p-3 mb-12"
-        aria-label="Government information sections"
-      >
+      <Section aria-label="Government information sections">
         <GovernmentNav />
 
         {isElectedOfficialsRoute && (

@@ -10,6 +10,7 @@ import Government from './pages/government';
 import Tourism from './pages/Tourism';
 import { Toaster } from './components/ui/sonner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/about';
 import AboutAllen from './pages/about/Allen';
 import AboutBetterGov from './pages/about/BetterGov';
 import Contact from './pages/Contact';
@@ -77,7 +78,7 @@ function App() {
               />
               {/* --------------------------------- */}
 
-              <Route path="/about" element={<AboutAllen />}>
+              <Route path="/about" element={<About />}>
                 <Route path="allen" element={<AboutAllen />} />
                 <Route path="bettergov" element={<AboutBetterGov />} />
               </Route>
