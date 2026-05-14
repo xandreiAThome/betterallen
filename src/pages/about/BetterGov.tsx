@@ -22,7 +22,7 @@ const AboutBetterGov: React.FC = () => {
         description="Learn about the volunteer initiative making local government information accessible to every Filipino."
       />
 
-      <Section className="mb-12 sm:px-10 lg:px-20 xl:px-30">
+      <Section className="mt-6 mb-6 sm:px-10 lg:px-20 xl:px-30">
         {/* Mission — primary blue */}
         <div className="mb-12">
           <Heading level={2}>Our Mission</Heading>
@@ -114,7 +114,7 @@ const AboutBetterGov: React.FC = () => {
         </div>
 
         {/* Get Involved — email and GitHub cards */}
-        <div className="mb-12">
+        <div>
           <Heading level={2}>Get Involved</Heading>
           <Text className="mt-2 mb-8 leading-relaxed text-gray-600 max-w-none">
             BetterGov is open to anyone who believes Filipinos deserve better
@@ -152,7 +152,7 @@ const AboutBetterGov: React.FC = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/bettergovph/bettergov/issues/new"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center gap-5 p-6 transition-all bg-white border border-primary-200 rounded-2xl hover:border-primary-400 hover:shadow-md"
