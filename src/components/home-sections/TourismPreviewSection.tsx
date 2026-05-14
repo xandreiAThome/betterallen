@@ -65,7 +65,12 @@ export default function TourismPreviewSection() {
           </Text>
         </motion.div>
 
-        <motion.div initial="hidden" whileInView="show" variants={itemVariants}>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={itemVariants}
+          viewport={{ once: true }}
+        >
           <Heading level={4} className="mb-6">
             Popular Spots in Allen
           </Heading>
