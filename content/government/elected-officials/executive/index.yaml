@@ -3,8 +3,7 @@
   role: Mayor
   office: Office of the Mayor
   address: Municipal Hall, Allen
-  contact:
-    email: 'mayorkatsuan@gmail.com'
+  contact: null
   website: https://www.facebook.com/katkatsuan526
   isElected: true
   personId: katrina-suan
@@ -14,8 +13,7 @@
   role: Vice Mayor
   office: Office of the Vice Mayor
   address: Municipal Hall, Allen
-  contact:
-    email: 'lao_christian@yahoo.com'
+  contact: null
   website: https://www.facebook.com/christian.laolcb
   isElected: true
   personId: christian-lao

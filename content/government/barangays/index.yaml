@@ -7,11 +7,9 @@
     - role: Punong Barangay
       name: Jocelyn B. Cadayong
       contact: null
-      email: null
     - role: SK Chairperson
       name: Vincent Karl M. Sytico
       contact: null
-      email: syticovincentkarl@gmail.com
 
 - slug: barangay-bonifacio
   barangay_name: BONIFACIO
@@ -22,11 +20,9 @@
     - role: Punong Barangay
       name: Rommel Dineros
       contact: null
-      email: null
     - role: SK Chairperson
       name: null
       contact: null
-      email: null
 
 - slug: barangay-cabacungan
   barangay_name: CABACUNGAN
@@ -37,11 +33,9 @@
     - role: Punong Barangay
       name: Julian G. Cajandab
       contact: null
-      email: juliancajandab1210@gmail.com
     - role: SK Chairperson
       name: Arnold Gubat Ombrog
       contact: null
-      email: ombrog.a0802@gmail.com
 
 - slug: barangay-calarayan
   barangay_name: CALARAYAN
@@ -52,11 +46,9 @@
     - role: Punong Barangay
       name: Pedro G. Galino
       contact: null
-      email: null
     - role: SK Chairperson
       name: Aljun B. Delos Santos
       contact: null
-      email: aljun2710@gmail.com
 
 - slug: barangay-frederick
   barangay_name: FREDERICK
@@ -67,11 +59,9 @@
     - role: Punong Barangay
       name: Raul E. Florano
       contact: null
-      email: Floranoraul559@gmail.com
     - role: SK Chairperson
       name: Janine C. Esteves
       contact: null
-      email: Cainghogestevesjanine@gmail.com
 
 - slug: barangay-guinarawayan
   barangay_name: GUINARAWAYAN
@@ -82,11 +72,9 @@
     - role: Punong Barangay
       name: Christine Mendoza Puaso
       contact: null
-      email: puasochristine2@gmail.com
     - role: SK Chairperson
       name: Ali G. Puaso
       contact: null
-      email: alipuaso4@gmail.com
 
 - slug: barangay-imelda
   barangay_name: IMELDA
@@ -97,11 +85,9 @@
     - role: Punong Barangay
       name: Joy F. Porio
       contact: null
-      email: null
     - role: SK Chairperson
       name: Divine P. Gerero
       contact: null
-      email: devinegerero04@gmail.com
 
 - slug: barangay-jubasan
   barangay_name: JUBASAN
@@ -112,11 +98,9 @@
     - role: Punong Barangay
       name: Manolito F. Gubat Jr.
       contact: null
-      email: manolitofgubat@gmail.com
     - role: SK Chairperson
       name: Kaisser Jefferson Jao
       contact: null
-      email: kaiserjeffersonjao@gmail.com
 
 - slug: barangay-kinabranan-i
   barangay_name: KINABRANAN I
@@ -127,11 +111,9 @@
     - role: Punong Barangay
       name: Luz J. Jamoralin
       contact: null
-      email: null
     - role: SK Chairperson
       name: Nomeriano III O. Diaz
       contact: null
-      email: Nomerdiaz8@gmail.com
 
 - slug: barangay-kinabranan-ii
   barangay_name: KINABRANAN II
@@ -142,11 +124,9 @@
     - role: Punong Barangay
       name: Joel V. Grande
       contact: null
-      email: Brgykinabrananzoneii@gmail.com
     - role: SK Chairperson
       name: Paul Gigantana
       contact: null
-      email: paulgiganta08@gmail.com
 
 - slug: barangay-kinagiutman
   barangay_name: KINAGIUTMAN
@@ -157,11 +137,9 @@
     - role: Punong Barangay
       name: Alfonso M. Rarela Jr.
       contact: null
-      email: rfloralde1997@gmail.com
     - role: SK Chairperson
       name: Emmanuel Galaroza
       contact: null
-      email: emmangalaroza@gmail.com
 
 - slug: barangay-lagundi
   barangay_name: LAGUNDI
@@ -172,11 +150,9 @@
     - role: Punong Barangay
       name: Maximo L. Carlon Jr.
       contact: null
-      email: null
     - role: SK Chairperson
       name: Kent Leo G. Lim
       contact: null
-      email: null
 
 - slug: barangay-lipata
   barangay_name: LIPATA
@@ -187,11 +163,9 @@
     - role: Punong Barangay
       name: Rowena Lebria Rustia
       contact: null
-      email: rowenarustia1969@gmail.com
     - role: SK Chairperson
       name: Ralph B. Presado
       contact: null
-      email: ralphbogtong@gmail.com
 
 - slug: barangay-lo-oc
   barangay_name: LO-OC
@@ -202,11 +176,9 @@
     - role: Punong Barangay
       name: James Rodolfo D. Suan
       contact: null
-      email: null
     - role: SK Chairperson
       name: Jeany Rose Vetonio
       contact: null
-      email: vetoniojeanyrose52@gmail.com
 
 - slug: barangay-londres
   barangay_name: LONDRES
@@ -217,11 +189,9 @@
     - role: Punong Barangay
       name: Bernadette Pragacha
       contact: null
-      email: null
     - role: SK Chairperson
       name: John Carlo Estinopo
       contact: null
-      email: null
 
 - slug: barangay-sabang-i
   barangay_name: SABANG I
@@ -232,11 +202,9 @@
     - role: Punong Barangay
       name: Alexander L. Suan
       contact: null
-      email: null
     - role: SK Chairperson
       name: null
       contact: null
-      email: null
 
 - slug: barangay-sabang-ii
   barangay_name: SABANG II
@@ -247,11 +215,9 @@
     - role: Punong Barangay
       name: Arturo Tobes Dubongco Jr.
       contact: null
-      email: null
     - role: SK Chairperson
       name: Winona Kyla Suan Galaroza
       contact: null
-      email: null
 
 - slug: barangay-santa-rita
   barangay_name: SANTA RITA
@@ -262,11 +228,9 @@
     - role: Punong Barangay
       name: Renato D. Cula
       contact: null
-      email: null
     - role: SK Chairperson
       name: Jessa Mae G. Cula
       contact: null
-      email: jessamaecula0@gmail.com
 
 - slug: barangay-tasvilla
   barangay_name: TASVILLA
@@ -277,11 +241,9 @@
     - role: Punong Barangay
       name: Benigno B. Floralde Sr.
       contact: null
-      email: null
     - role: SK Chairperson
       name: null
       contact: null
-      email: null
 
 - slug: barangay-victoria
   barangay_name: VICTORIA
@@ -292,8 +254,6 @@
     - role: Punong Barangay
       name: null
       contact: null
-      email: null
     - role: SK Chairperson
       name: Mark Floyd S. Are
       contact: null
-      email: markfloydare3@gmail.com

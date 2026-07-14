@@ -5,8 +5,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/apple-cajandab.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   committee_chair:
     - 'Appropriation, Budget & Finance'
     - 'Social Welfare and Labor & Human Right'
@@ -26,8 +25,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/elenita-suan.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'suan-venus0914@gmail.com'
+  contact: null
   committee_chair:
     - 'Agriculture, Accreditation & Cooperative'
     - 'Health and Sanitation'
@@ -48,8 +46,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/alexander-suan.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   committee_chair:
     - 'Barangay Affairs'
     - 'Public Order, Public Safety, & Utilities'
@@ -69,8 +66,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/restie-lim.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'restie883@gmail.com'
+  contact: null
   committee_chair:
     - 'Environment and Disaster Resiliency'
     - 'Tourism & Culture'
@@ -91,8 +87,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/ola-gubat.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   sb_role: 'Majority Leader'
   committee_chair:
     - 'Justice, Good Governance, and Civil Service'
@@ -114,8 +109,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/ronnel-cajandbab.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   committee_chair:
     - 'Trade, Commerce & Industry'
     - 'Transportation'
@@ -133,8 +127,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/winona-galaroza.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   committee_chair:
     - 'Youth and Sports Development'
   committee_vice_chair:
@@ -147,8 +140,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/santos-lim.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sonnylimnumberoe@gmail.com'
+  contact: null
   sb_role: 'Minority Leader'
   committee_member:
     - 'Appropriation, Budget & Finance'
@@ -174,8 +166,7 @@
   position: 'Councilor'
   photo: '/public/images/officials/mark-ablig.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   sb_role: 'Pro-Tempore'
   # No committee chair/member assignments listed in the committee document
 
@@ -183,6 +174,5 @@
   position: 'Councilor'
   photo: '/public/images/officials/arthur-briones.jpg'
   term: '2025 - 2028'
-  contact:
-    email: 'sballennsr8@gmail.com'
+  contact: null
   # No committee assignments listed in the committee document
