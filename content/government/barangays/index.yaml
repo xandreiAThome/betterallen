@@ -1,29 +1,27 @@
 - slug: barangay-alejandro
   barangay_name: ALEJANDRO
   address: null
-  trunkline:
-    - '09168343951'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Jocelyn B. Cadayong
-      contact: '09168343951'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Vincent Karl M. Sytico
-      contact: '09388295977'
+      contact: null
       email: syticovincentkarl@gmail.com
 
 - slug: barangay-bonifacio
   barangay_name: BONIFACIO
   address: null
-  trunkline:
-    - '09518205119'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Rommel Dineros
-      contact: '09518205119'
+      contact: null
       email: null
     - role: SK Chairperson
       name: null
@@ -33,193 +31,181 @@
 - slug: barangay-cabacungan
   barangay_name: CABACUNGAN
   address: null
-  trunkline:
-    - '09052504112'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Julian G. Cajandab
-      contact: '09052504112'
+      contact: null
       email: juliancajandab1210@gmail.com
     - role: SK Chairperson
       name: Arnold Gubat Ombrog
-      contact: '09631856222'
+      contact: null
       email: ombrog.a0802@gmail.com
 
 - slug: barangay-calarayan
   barangay_name: CALARAYAN
   address: null
-  trunkline:
-    - '09368200552'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Pedro G. Galino
-      contact: '09368200552'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Aljun B. Delos Santos
-      contact: 09633080742l
+      contact: null
       email: aljun2710@gmail.com
 
 - slug: barangay-frederick
   barangay_name: FREDERICK
   address: null
-  trunkline:
-    - '09773615741'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Raul E. Florano
-      contact: '09773615741'
+      contact: null
       email: Floranoraul559@gmail.com
     - role: SK Chairperson
       name: Janine C. Esteves
-      contact: '09856206164'
+      contact: null
       email: Cainghogestevesjanine@gmail.com
 
 - slug: barangay-guinarawayan
   barangay_name: GUINARAWAYAN
   address: null
-  trunkline:
-    - '09307620031'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Christine Mendoza Puaso
-      contact: '09307620031'
+      contact: null
       email: puasochristine2@gmail.com
     - role: SK Chairperson
       name: Ali G. Puaso
-      contact: '09619059652'
+      contact: null
       email: alipuaso4@gmail.com
 
 - slug: barangay-imelda
   barangay_name: IMELDA
   address: null
-  trunkline:
-    - '09486095567'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Joy F. Porio
-      contact: '09486095567'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Divine P. Gerero
-      contact: '09305541899'
+      contact: null
       email: devinegerero04@gmail.com
 
 - slug: barangay-jubasan
   barangay_name: JUBASAN
   address: null
-  trunkline:
-    - '09056932793'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Manolito F. Gubat Jr.
-      contact: '09056932793'
+      contact: null
       email: manolitofgubat@gmail.com
     - role: SK Chairperson
       name: Kaisser Jefferson Jao
-      contact: 09770842300
+      contact: null
       email: kaiserjeffersonjao@gmail.com
 
 - slug: barangay-kinabranan-i
   barangay_name: KINABRANAN I
   address: null
-  trunkline:
-    - '0967 809 5216'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Luz J. Jamoralin
-      contact: '0967 809 5216'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Nomeriano III O. Diaz
-      contact: '09561653315'
+      contact: null
       email: Nomerdiaz8@gmail.com
 
 - slug: barangay-kinabranan-ii
   barangay_name: KINABRANAN II
   address: null
-  trunkline:
-    - '09284732697'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Joel V. Grande
-      contact: '09284732697'
+      contact: null
       email: Brgykinabrananzoneii@gmail.com
     - role: SK Chairperson
       name: Paul Gigantana
-      contact: '09694895788'
+      contact: null
       email: paulgiganta08@gmail.com
 
 - slug: barangay-kinagiutman
   barangay_name: KINAGIUTMAN
   address: null
-  trunkline:
-    - '09307254420'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Alfonso M. Rarela Jr.
-      contact: '09307254420'
+      contact: null
       email: rfloralde1997@gmail.com
     - role: SK Chairperson
       name: Emmanuel Galaroza
-      contact: '09624990417'
+      contact: null
       email: emmangalaroza@gmail.com
 
 - slug: barangay-lagundi
   barangay_name: LAGUNDI
   address: null
-  trunkline:
-    - '09488083291'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Maximo L. Carlon Jr.
-      contact: '09488083291'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Kent Leo G. Lim
-      contact: '09397580075'
+      contact: null
       email: null
 
 - slug: barangay-lipata
   barangay_name: LIPATA
   address: null
-  trunkline:
-    - '09453068819'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Rowena Lebria Rustia
-      contact: '09453068819'
+      contact: null
       email: rowenarustia1969@gmail.com
     - role: SK Chairperson
       name: Ralph B. Presado
-      contact: '09092472407'
+      contact: null
       email: ralphbogtong@gmail.com
 
 - slug: barangay-lo-oc
   barangay_name: LO-OC
   address: null
-  trunkline:
-    - '09813723805'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: James Rodolfo D. Suan
-      contact: '09813723805'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Jeany Rose Vetonio
-      contact: '09542656677'
+      contact: null
       email: vetoniojeanyrose52@gmail.com
 
 - slug: barangay-londres
@@ -230,23 +216,22 @@
   officials:
     - role: Punong Barangay
       name: Bernadette Pragacha
-      contact: 09554234285
+      contact: null
       email: null
     - role: SK Chairperson
       name: John Carlo Estinopo
-      contact: 09854484204
+      contact: null
       email: null
 
 - slug: barangay-sabang-i
   barangay_name: SABANG I
   address: null
-  trunkline:
-    - '09674350111'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Alexander L. Suan
-      contact: '09674350111'
+      contact: null
       email: null
     - role: SK Chairperson
       name: null
@@ -256,45 +241,42 @@
 - slug: barangay-sabang-ii
   barangay_name: SABANG II
   address: null
-  trunkline:
-    - '0917-598-1973'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Arturo Tobes Dubongco Jr.
-      contact: '09175981973'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Winona Kyla Suan Galaroza
-      contact: '09062218100'
+      contact: null
       email: null
 
 - slug: barangay-santa-rita
   barangay_name: SANTA RITA
   address: null
-  trunkline:
-    - '09383879783'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Renato D. Cula
-      contact: '09383879783'
+      contact: null
       email: null
     - role: SK Chairperson
       name: Jessa Mae G. Cula
-      contact: '09648669912'
+      contact: null
       email: jessamaecula0@gmail.com
 
 - slug: barangay-tasvilla
   barangay_name: TASVILLA
   address: null
-  trunkline:
-    - '09164523808'
+  trunkline: null
   website: null
   officials:
     - role: Punong Barangay
       name: Benigno B. Floralde Sr.
-      contact: '09164523808'
+      contact: null
       email: null
     - role: SK Chairperson
       name: null
@@ -313,5 +295,5 @@
       email: null
     - role: SK Chairperson
       name: Mark Floyd S. Are
-      contact: '09510211725'
+      contact: null
       email: markfloydare3@gmail.com

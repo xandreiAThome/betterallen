@@ -6,7 +6,7 @@
   email: null
   department_head:
     name: KATRINA MAE E. SUAN
-    contact: '0917-324-5821'
+    contact: null
     email: null
 
 - slug: public-employment-service-office
@@ -17,7 +17,7 @@
   email: null
   department_head:
     name: LOVELY MAY L. JAVINES
-    contact: '0929-435-9454'
+    contact: null
     email: null
 
 - slug: municipal-vice-mayor
@@ -28,7 +28,7 @@
   email: null
   department_head:
     name: CHRISTIAN G. LAO
-    contact: '0921-615-7109'
+    contact: null
     email: null
 
 - slug: sangguniang-bayan-secretary
@@ -39,7 +39,7 @@
   email: null
   department_head:
     name: ALICE C. ARCE
-    contact: '0929-714-7923'
+    contact: null
     email: null
 
 - slug: municipal-planning-and-development-office
@@ -50,7 +50,7 @@
   email: null
   department_head:
     name: CARLO T. OMBROG - OIC
-    contact: '0945-4503-4847'
+    contact: null
     email: null
 
 - slug: local-civil-registry-office
@@ -61,7 +61,7 @@
   email: null
   department_head:
     name: PAOLA GRACE H. LACSAMANA
-    contact: '0995-074-0903'
+    contact: null
     email: null
 
 - slug: municipal-budget-office
@@ -72,7 +72,7 @@
   email: null
   department_head:
     name: CIPRIANO G. GARDOQUE
-    contact: '0959-362-9328'
+    contact: null
     email: null
 
 - slug: municipal-accounting-office
@@ -83,7 +83,7 @@
   email: null
   department_head:
     name: IMEE A. ESPONILLA
-    contact: '0920-345-8519'
+    contact: null
     email: null
 
 - slug: municipal-treasurers-office
@@ -94,7 +94,7 @@
   email: null
   department_head:
     name: CATALINA O. GABAD
-    contact: '0926-047-3303'
+    contact: null
     email: null
 
 - slug: municipal-assessors-office
@@ -105,7 +105,7 @@
   email: null
   department_head:
     name: VAL JULUIS R. CESAR - OIC
-    contact: '0977-660-7974'
+    contact: null
     email: null
 
 - slug: municipal-health-office
@@ -116,7 +116,7 @@
   email: null
   department_head:
     name: DAISY F. ABASOLO
-    contact: '0915-058-3066'
+    contact: null
     email: null
 
 - slug: municipal-social-welfare-development-office
@@ -127,7 +127,7 @@
   email: null
   department_head:
     name: LANY S. CASTRO
-    contact: '0917-704-0680'
+    contact: null
     email: null
 
 - slug: municipal-agriculture-office
@@ -138,7 +138,7 @@
   email: null
   department_head:
     name: JUDY P. MORADO
-    contact: '0916-916-8960'
+    contact: null
     email: null
 
 - slug: municipal-engineering-office
@@ -149,7 +149,7 @@
   email: null
   department_head:
     name: CARLO T. OMBROG
-    contact: '0945-4503-4847'
+    contact: null
     email: null
 
 - slug: municipal-human-resource-management-office
@@ -160,7 +160,7 @@
   email: null
   department_head:
     name: RACHEL M. PORNELOS - OIC
-    contact: '0935-635-6229'
+    contact: null
     email: null
 
 - slug: municipal-mdrrmo-office
@@ -171,7 +171,7 @@
   email: null
   department_head:
     name: ALBERTO G. CABACANG
-    contact: '0951-616-1397'
+    contact: null
     email: null
 
 - slug: municipal-tourism-office
@@ -182,7 +182,7 @@
   email: null
   department_head:
     name: BEVY IVY S. NALDA
-    contact: '0915-480-6538'
+    contact: null
     email: null
 
 - slug: municipal-environment-and-natural-resources-office
@@ -193,7 +193,7 @@
   email: null
   department_head:
     name: ROY G. PORNELOS
-    contact: '0948-803-5959'
+    contact: null
     email: null
 
 - slug: municipal-nutrition-office
@@ -204,7 +204,7 @@
   email: null
   department_head:
     name: ANTONETE JE-ANN F. CABAHUG - OIC
-    contact: '0915-074-5420'
+    contact: null
     email: null
 
 - slug: local-youth-and-development-office
@@ -215,7 +215,7 @@
   email: null
   department_head:
     name: KIM O. PUASO
-    contact: '0917-675-0038'
+    contact: null
     email: null
 
 - slug: municipal-information-officer
@@ -226,5 +226,5 @@
   email: null
   department_head:
     name: ART WENSO G. TAN - DESIGNATE
-    contact: '0977-691-9160'
+    contact: null
     email: null
